@@ -1,0 +1,10 @@
+.DS_Store
+site/
+prev/
+downloads/
+scripts/bin/
+data/daily/*/shots/
+data/daily/run-latest.log
+deliverables/*.zip
+__pycache__/
+.netlify/

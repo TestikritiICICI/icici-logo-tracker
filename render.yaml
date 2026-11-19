@@ -1,0 +1,14 @@
+# Render Blueprint: a free static site served from the "site" branch,
+# which the daily GitHub Actions workflow rebuilds and pushes every morning.
+services:
+  - type: web
+    name: icici-logo-tracker
+    runtime: static
+    branch: site
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeployTrigger: commit
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow

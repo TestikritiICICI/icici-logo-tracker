@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ICICI Logo Visibility Audit</title>
+<link rel="icon" href="assets/icici-iman.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap">
+<style>
+:root {
+  --orange:#E77817; --maroon:#97291E; --navy:#053C6D; --beige:#D1CFBB;
+  --gold:#FDB92A; --grey:#525252; --bg:#FFFFFF; --soft:#F6F5F0; --line:#E4E2D6;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; font-family:'Mulish',Arial,sans-serif; font-weight:600; color:var(--grey); background:var(--bg); line-height:1.5; }
+a { color:var(--navy); }
+.wrap { max-width:1180px; margin:0 auto; padding:0 16px; }
+nav.top { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--line); }
+nav.top .wrap { display:flex; align-items:center; gap:24px; height:64px; }
+nav.top img { height:34px; }
+nav.top ul { display:flex; gap:20px; list-style:none; margin:0 0 0 auto; padding:0; overflow-x:auto; }
+nav.top a { text-decoration:none; font-weight:700; white-space:nowrap; }
+nav.top a:hover { color:var(--orange); }
+.hero { background:var(--orange); color:#fff; padding:56px 0 48px; }
+.hero h1 { font-size:clamp(2rem,5vw,3.25rem); font-weight:900; margin:0 0 8px; line-height:1.15; }
+.hero p { font-size:clamp(1.05rem,2.2vw,1.35rem); margin:0; max-width:760px; }
+.hero .date { margin-top:16px; font-weight:700; opacity:.9; }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:-28px; }
+.stat { background:#fff; border-radius:12px; padding:20px; box-shadow:0 4px 18px rgba(0,0,0,.08); border-top:6px solid; }
+.stat .num { display:block; font-size:clamp(2.2rem,5vw,3.25rem); font-weight:900; line-height:1; }
+.stat .lbl { font-weight:700; }
+.stat.logo { border-color:var(--orange); } .stat.logo .num { color:var(--orange); }
+.stat.text { border-color:var(--gold); } .stat.text .num { color:#B07A0A; }
+.stat.rival { border-color:var(--maroon); } .stat.rival .num { color:var(--maroon); }
+.stat.none { border-color:var(--beige); } .stat.none .num { color:var(--navy); }
+section { padding:56px 0 8px; scroll-margin-top:64px; }
+h2 { color:var(--maroon); font-weight:800; font-size:clamp(1.6rem,3.5vw,2.2rem); margin:0 0 4px; }
+.sub { color:var(--navy); font-weight:800; font-size:1.15rem; margin:0 0 24px; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.chip { font:inherit; font-weight:700; border:2px solid var(--navy); color:var(--navy); background:#fff; border-radius:999px; padding:6px 14px; cursor:pointer; }
+.chip.on { background:var(--navy); color:#fff; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+.brand { border:1px solid var(--line); border-radius:12px; padding:18px; background:#fff; }
+.brand header { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+.brand h3 { margin:0; color:var(--navy); font-weight:800; font-size:1.25rem; }
+.cat { margin:2px 0 10px; font-size:.9rem; }
+.tag { font-size:.8rem; font-weight:800; padding:4px 10px; border-radius:999px; white-space:nowrap; }
+.tag.logo { background:var(--orange); color:#fff; }
+.tag.text { background:var(--gold); color:var(--navy); }
+.tag.rival { background:var(--maroon); color:#fff; }
+.tag.none { background:var(--beige); color:var(--navy); }
+dl { margin:0; }
+dt { font-weight:800; color:var(--navy); font-size:.85rem; margin-top:8px; }
+dd { margin:0; }
+.muted { color:#7a7a7a; font-weight:500; }
+.small { font-size:.9rem; margin:12px 0 0; }
+.thumbs { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.thumb img { width:96px; height:64px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid var(--line); }
+.gallery { columns:3 300px; column-gap:16px; }
+.shot { break-inside:avoid; margin:0 0 16px; background:var(--soft); border-radius:10px; padding:8px; }
+.shot img { width:100%; display:block; border-radius:6px; }
+.shot figcaption { font-size:.85rem; padding:6px 2px 0; word-break:break-all; }
+.shot strong { color:var(--navy); margin-right:4px; }
+.deck-actions { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px; }
+.btn { display:inline-block; background:var(--orange); color:#fff; text-decoration:none; font-weight:800; padding:12px 20px; border-radius:8px; }
+.btn.alt { background:#fff; color:var(--navy); border:2px solid var(--navy); }
+.slides { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+.slides img { width:100%; display:block; border-radius:8px; border:1px solid var(--line); }
+.method { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.panel { background:var(--soft); border-radius:12px; padding:20px 24px; }
+.panel h3 { margin-top:0; color:var(--navy); font-weight:800; }
+.log { background:var(--soft); border-radius:12px; padding:8px 24px 16px; }
+.log h3 { color:var(--maroon); font-weight:800; margin:20px 0 4px; }
+.log h4 { color:var(--navy); font-weight:800; margin:16px 0 4px; }
+.log code { background:#fff; padding:1px 5px; border-radius:4px; font-size:.9em; }
+.log a { word-break:break-all; }
+footer { margin-top:56px; border-top:1px solid var(--line); padding:24px 0 40px; }
+footer .wrap { display:flex; align-items:center; gap:12px; }
+footer img { height:40px; }
+#lb { position:fixed; inset:0; background:rgba(0,0,0,.85); display:none; align-items:center; justify-content:center; flex-direction:column; z-index:50; padding:16px; }
+#lb.open { display:flex; }
+#lb img { max-width:100%; max-height:85vh; border-radius:6px; background:#fff; }
+#lb p { color:#fff; margin:10px 0 0; text-align:center; word-break:break-all; }
+#lb button { position:absolute; top:12px; right:16px; font:inherit; font-size:2rem; background:none; border:0; color:#fff; cursor:pointer; }
+[hidden] { display:none !important; }
+@media (max-width:760px) {
+  .stats { grid-template-columns:repeat(2,1fr); }
+  .method { grid-template-columns:1fr; }
+  .grid { grid-template-columns:1fr; }
+  nav.top ul { gap:14px; font-size:.9rem; }
+  nav.top img { height:26px; }
+}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <img src="assets/icici-logo.png" alt="ICICI Bank">
+  <ul>
+    <li><a href="index.html">Daily tracker</a></li>
+    <li><a href="#brands">Brands</a></li>
+    <li><a href="#evidence">Evidence</a></li>
+    <li><a href="#deck">Deck</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#log">Activity log</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>Only 6 of 20 brands show our logo</h1>
+  <p>ICICI Bank logo visibility audit across the top 20 Festive Bonanza partner brands with live credit card offers.</p>
+  <p class="date">Last checked October 28, 2026</p>
+</div></header>
+
+<div class="wrap"><div class="stats"><div class="stat logo"><span class="num">6</span><span class="lbl">ICICI logo shown</span></div><div class="stat text"><span class="num">3</span><span class="lbl">Named in text only</span></div><div class="stat rival"><span class="num">9</span><span class="lbl">Rival banks shown</span></div><div class="stat none"><span class="num">2</span><span class="lbl">No bank shown</span></div></div></div>
+
+<main class="wrap">
+<section id="brands">
+  <h2>All 20 brands at a glance</h2>
+  <p class="sub">Homepage, offers page and one product page checked for each brand</p>
+  <div class="chips" id="filters"><button class="chip on" data-f="all">All 20</button><button class="chip" data-f="logo">ICICI logo shown (6)</button><button class="chip" data-f="text">Named in text only (3)</button><button class="chip" data-f="rival">Rival banks shown (9)</button><button class="chip" data-f="none">No bank shown (2)</button></div>
+  <div class="grid">
+<article class="brand" data-f="logo">
+  <header><h3>Amazon</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">E-commerce · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>ICICI logo in bank offer strip on every hero banner</dd>
+    <dt>Product page</dt><dd>Not checked (logo already confirmed)</dd>
+    <dt>Other banks seen</dt><dd><span class="muted">None seen</span></dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/amazon-homepage-icici-strip.jpg" data-cap="Amazon: amazon-homepage-icici-strip.jpg"><img src="evidence/amazon-homepage-icici-strip.jpg" alt="Amazon evidence" loading="lazy"></a><a class="thumb" href="evidence/amazon-icici-strip-zoom.png" data-cap="Amazon: amazon-icici-strip-zoom.png"><img src="evidence/amazon-icici-strip-zoom.png" alt="Amazon evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="logo">
+  <header><h3>Vijay Sales</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">Electronics retail · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>ICICI logo in bank strip; text: 5% up to Rs 7,500 off on ICICI Credit Card EMI</dd>
+    <dt>Product page</dt><dd>Not checked (logo already confirmed)</dd>
+    <dt>Other banks seen</dt><dd>HDFC, HSBC, Yes, IDFC FIRST, BOB, IndusInd, RBL</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/vijay-sales-homepage.jpg" data-cap="Vijay Sales: vijay-sales-homepage.jpg"><img src="evidence/vijay-sales-homepage.jpg" alt="Vijay Sales evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="logo">
+  <header><h3>Cleartrip</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">Travel · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>8+ ICICI logos on offers page (ICICI EMI and Amazon ICICI EMI)</dd>
+    <dt>Product page</dt><dd>Not checked (logo already confirmed)</dd>
+    <dt>Other banks seen</dt><dd>SBI, Axis, HDFC</dd>
+  </dl>
+  <p class="muted small">Text scan only, no screenshot</p>
+</article>
+<article class="brand" data-f="logo">
+  <header><h3>MakeMyTrip</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">Travel · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>ICICI tile in Bank Offers tab and co-brand card link; tile thumbnail did not render</dd>
+    <dt>Product page</dt><dd>Not checked (logo already confirmed)</dd>
+    <dt>Other banks seen</dt><dd>Yes, Bajaj Finserv, AU, JNK, Federal, HDFC</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/makemytrip-bank-offers-icici-tile.jpg" data-cap="MakeMyTrip: makemytrip-bank-offers-icici-tile.jpg"><img src="evidence/makemytrip-bank-offers-icici-tile.jpg" alt="MakeMyTrip evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="logo">
+  <header><h3>Croma</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">Electronics retail · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos</dd>
+    <dt>Product page</dt><dd>ICICI logo on first card in Super Savings (Rs 4000 off on ICICI Bank Credit Card) <span class="muted">(iPhone 17 Pro 256GB)</span></dd>
+    <dt>Other banks seen</dt><dd>IDFC FIRST, HDFC, AU, SBI</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/croma-product-page-icici-first-card.jpg" data-cap="Croma: croma-product-page-icici-first-card.jpg"><img src="evidence/croma-product-page-icici-first-card.jpg" alt="Croma evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="logo">
+  <header><h3>OnePlus</h3><span class="tag logo">ICICI logo shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos (price text says incl. bank offers)</dd>
+    <dt>Product page</dt><dd>ICICI logo inside the Instant Discount pop-up after one click (ICICI Bank CC Non EMI Rs 3000 off) <span class="muted">(OnePlus Pad 4)</span></dd>
+    <dt>Other banks seen</dt><dd>HDFC, IndusInd, Kotak, IDFC FIRST (other tabs, text)</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/oneplus-pad4-instant-discount-icici-logo.jpg" data-cap="OnePlus: oneplus-pad4-instant-discount-icici-logo.jpg"><img src="evidence/oneplus-pad4-instant-discount-icici-logo.jpg" alt="OnePlus evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="text">
+  <header><h3>Apple</h3><span class="tag text">Named in text only</span></header>
+  <p class="cat">Electronics · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>Fine print names American Express, Axis Bank and ICICI Bank</dd>
+    <dt>Product page</dt><dd>Buy iPhone page already counted <span class="muted">(Buy iPhone page)</span></dd>
+    <dt>Other banks seen</dt><dd>Amex, Axis</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/apple-buy-iphone.jpg" data-cap="Apple: apple-buy-iphone.jpg"><img src="evidence/apple-buy-iphone.jpg" alt="Apple evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="text">
+  <header><h3>Google Store</h3><span class="tag text">Named in text only</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>Bank offers behind Explore bank offers link</dd>
+    <dt>Product page</dt><dd>Text: instant cashback on EMI with HDFC Bank or ICICI Bank credit card; no logo on product or buy page <span class="muted">(Pixel 11)</span></dd>
+    <dt>Other banks seen</dt><dd>HDFC</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/google-store-pixel11-icici-text.jpg" data-cap="Google Store: google-store-pixel11-icici-text.jpg"><img src="evidence/google-store-pixel11-icici-text.jpg" alt="Google Store evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="text">
+  <header><h3>Xiaomi</h3><span class="tag text">Named in text only</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos</dd>
+    <dt>Product page</dt><dd>Text, first offer on buy page: Up to Rs 3,000 off on ICICI Credit Card; no logo <span class="muted">(Redmi Note 17 Pro 5G)</span></dd>
+    <dt>Other banks seen</dt><dd>HDFC</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/xiaomi-buy-page-icici-text.jpg" data-cap="Xiaomi: xiaomi-buy-page-icici-text.jpg"><img src="evidence/xiaomi-buy-page-icici-text.jpg" alt="Xiaomi evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Tata CLiQ</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Fashion · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>9 bank creatives: RBL, HSBC, AU, HDFC, Kotak, Deutsche, IndusInd, Amex, J&amp;K</dd>
+    <dt>Product page</dt><dd>DBS Bank card offer in Available Offers; no ICICI <span class="muted">(Levi&#x27;s jacquard shirt)</span></dd>
+    <dt>Other banks seen</dt><dd>RBL, HSBC, AU, HDFC, Kotak, Deutsche, IndusInd, Amex, J&amp;K, DBS</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/tata-cliq-homepage.jpg" data-cap="Tata CLiQ: tata-cliq-homepage.jpg"><img src="evidence/tata-cliq-homepage.jpg" alt="Tata CLiQ evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Reliance Digital</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Electronics retail · checked October 27, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>Carousel rotates SBI, PNB, HDFC, IDFC FIRST</dd>
+    <dt>Product page</dt><dd>Axis, Yes, Federal, PNB, IDFC FIRST, IDBI logos; no ICICI <span class="muted">(Oppo K13 Turbo Pro)</span></dd>
+    <dt>Other banks seen</dt><dd>SBI, PNB, HDFC, IDFC FIRST, Axis, Yes, Federal, IDBI</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/reliance-digital-carousel-hdfc.png" data-cap="Reliance Digital: reliance-digital-carousel-hdfc.png"><img src="evidence/reliance-digital-carousel-hdfc.png" alt="Reliance Digital evidence" loading="lazy"></a><a class="thumb" href="evidence/reliance-digital-carousel-idfc.png" data-cap="Reliance Digital: reliance-digital-carousel-idfc.png"><img src="evidence/reliance-digital-carousel-idfc.png" alt="Reliance Digital evidence" loading="lazy"></a><a class="thumb" href="evidence/reliance-digital-carousel-pnb.png" data-cap="Reliance Digital: reliance-digital-carousel-pnb.png"><img src="evidence/reliance-digital-carousel-pnb.png" alt="Reliance Digital evidence" loading="lazy"></a><a class="thumb" href="evidence/reliance-digital-carousel-sbi.png" data-cap="Reliance Digital: reliance-digital-carousel-sbi.png"><img src="evidence/reliance-digital-carousel-sbi.png" alt="Reliance Digital evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>HP</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos</dd>
+    <dt>Product page</dt><dd>Offers panel names SBI, Axis, HDFC, Kotak, Yes Bank, American Express and other banks; no ICICI, no logos <span class="muted">(HP OmniBook 5 14-mh0068TU)</span></dd>
+    <dt>Other banks seen</dt><dd>SBI, Axis, HDFC, Kotak, Yes, Amex</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/hp-product-page-offers-panel.jpg" data-cap="HP: hp-product-page-offers-panel.jpg"><img src="evidence/hp-product-page-offers-panel.jpg" alt="HP evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Sony</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos</dd>
+    <dt>Product page</dt><dd>ShopatSC Bank Offers: Yes, Kotak, BOB cashback; no ICICI <span class="muted">(WH-ULT900N headphones)</span></dd>
+    <dt>Other banks seen</dt><dd>Yes, Kotak, BOB</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/sony-shopatsc-product-bank-offers.jpg" data-cap="Sony: sony-shopatsc-product-bank-offers.jpg"><img src="evidence/sony-shopatsc-product-bank-offers.jpg" alt="Sony evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Ajio</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Fashion · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>HSBC, HDFC, SBI offer banners</dd>
+    <dt>Product page</dt><dd>Only coupon codes on product page; no bank offers <span class="muted">(Buda Jeans checked shirt (Rs 322))</span></dd>
+    <dt>Other banks seen</dt><dd>HSBC, HDFC, SBI</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/ajio-homepage.jpg" data-cap="Ajio: ajio-homepage.jpg"><img src="evidence/ajio-homepage.jpg" alt="Ajio evidence" loading="lazy"></a><a class="thumb" href="evidence/ajio-product-page.jpg" data-cap="Ajio: ajio-product-page.jpg"><img src="evidence/ajio-product-page.jpg" alt="Ajio evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Zomato</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Food delivery · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos</dd>
+    <dt>Product page</dt><dd>RBL Bank card offer on restaurant page plus other banks; no ICICI <span class="muted">(Pa Pa Ya BKC (dining))</span></dd>
+    <dt>Other banks seen</dt><dd>RBL, SBI</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/zomato-restaurant-rbl-offer.jpg" data-cap="Zomato: zomato-restaurant-rbl-offer.jpg"><img src="evidence/zomato-restaurant-rbl-offer.jpg" alt="Zomato evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Samsung</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos on offers page</dd>
+    <dt>Product page</dt><dd>Samsung Axis Bank credit card offer with card image; no ICICI <span class="muted">(Galaxy S26 Ultra buy page)</span></dd>
+    <dt>Other banks seen</dt><dd>Axis</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/samsung-product-page-axis-card.jpg" data-cap="Samsung: samsung-product-page-axis-card.jpg"><img src="evidence/samsung-product-page-axis-card.jpg" alt="Samsung evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Swiggy</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Food delivery · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>Text: Up to 10% off with bank offers</dd>
+    <dt>Product page</dt><dd>HDFC logo with Flat 10% off (HDFCCCEMI) on restaurant page; no ICICI <span class="muted">(Food Exchange Novotel (Dineout))</span></dd>
+    <dt>Other banks seen</dt><dd>HDFC</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/swiggy-restaurant-page.jpg" data-cap="Swiggy: swiggy-restaurant-page.jpg"><img src="evidence/swiggy-restaurant-page.jpg" alt="Swiggy evidence" loading="lazy"></a><a class="thumb" href="evidence/swiggy-restaurant-hdfc-zoom.png" data-cap="Swiggy: swiggy-restaurant-hdfc-zoom.png"><img src="evidence/swiggy-restaurant-hdfc-zoom.png" alt="Swiggy evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="rival">
+  <header><h3>Goibibo</h3><span class="tag rival">Rival banks shown</span></header>
+  <p class="cat">Travel · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>HDFC banner on offers page</dd>
+    <dt>Product page</dt><dd>No bank offers on hotel page before room selection <span class="muted">(Ginger Goa Candolim (sample dates November 11 to 12))</span></dd>
+    <dt>Other banks seen</dt><dd>HDFC</dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/goibibo-hotel-page.jpg" data-cap="Goibibo: goibibo-hotel-page.jpg"><img src="evidence/goibibo-hotel-page.jpg" alt="Goibibo evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="none">
+  <header><h3>LG</h3><span class="tag none">No bank shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos on promotions page</dd>
+    <dt>Product page</dt><dd>Generic 5% cashback on selected credit and debit cards; no bank named <span class="muted">(55NU870BPLA TV)</span></dd>
+    <dt>Other banks seen</dt><dd><span class="muted">None seen</span></dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/lg-product-page-generic-cashback.jpg" data-cap="LG: lg-product-page-generic-cashback.jpg"><img src="evidence/lg-product-page-generic-cashback.jpg" alt="LG evidence" loading="lazy"></a></div>
+</article>
+<article class="brand" data-f="none">
+  <header><h3>Dell</h3><span class="tag none">No bank shown</span></header>
+  <p class="cat">Electronics · checked October 28, 2026</p>
+  <dl>
+    <dt>Homepage or offers page</dt><dd>No bank logos on deals page</dd>
+    <dt>Product page</dt><dd>Special Offers list only no-cost EMI; no bank named <span class="muted">(Dell Pro 16 laptop)</span></dd>
+    <dt>Other banks seen</dt><dd><span class="muted">None seen</span></dd>
+  </dl>
+  <div class="thumbs"><a class="thumb" href="evidence/dell-product-page-special-offers.jpg" data-cap="Dell: dell-product-page-special-offers.jpg"><img src="evidence/dell-product-page-special-offers.jpg" alt="Dell evidence" loading="lazy"></a></div>
+</article></div>
+</section>
+
+<section id="evidence">
+  <h2>Evidence</h2>
+  <p class="sub">25 screenshots from brand websites. Click any image to enlarge.</p>
+  <div class="gallery"><figure class="shot" data-f="logo"><a href="evidence/amazon-homepage-icici-strip.jpg" data-cap="Amazon: amazon-homepage-icici-strip.jpg"><img src="evidence/amazon-homepage-icici-strip.jpg" alt="Amazon evidence" loading="lazy"></a><figcaption><strong>Amazon</strong> amazon-homepage-icici-strip.jpg</figcaption></figure><figure class="shot" data-f="logo"><a href="evidence/amazon-icici-strip-zoom.png" data-cap="Amazon: amazon-icici-strip-zoom.png"><img src="evidence/amazon-icici-strip-zoom.png" alt="Amazon evidence" loading="lazy"></a><figcaption><strong>Amazon</strong> amazon-icici-strip-zoom.png</figcaption></figure><figure class="shot" data-f="logo"><a href="evidence/vijay-sales-homepage.jpg" data-cap="Vijay Sales: vijay-sales-homepage.jpg"><img src="evidence/vijay-sales-homepage.jpg" alt="Vijay Sales evidence" loading="lazy"></a><figcaption><strong>Vijay Sales</strong> vijay-sales-homepage.jpg</figcaption></figure><figure class="shot" data-f="logo"><a href="evidence/makemytrip-bank-offers-icici-tile.jpg" data-cap="MakeMyTrip: makemytrip-bank-offers-icici-tile.jpg"><img src="evidence/makemytrip-bank-offers-icici-tile.jpg" alt="MakeMyTrip evidence" loading="lazy"></a><figcaption><strong>MakeMyTrip</strong> makemytrip-bank-offers-icici-tile.jpg</figcaption></figure><figure class="shot" data-f="logo"><a href="evidence/croma-product-page-icici-first-card.jpg" data-cap="Croma: croma-product-page-icici-first-card.jpg"><img src="evidence/croma-product-page-icici-first-card.jpg" alt="Croma evidence" loading="lazy"></a><figcaption><strong>Croma</strong> croma-product-page-icici-first-card.jpg</figcaption></figure><figure class="shot" data-f="logo"><a href="evidence/oneplus-pad4-instant-discount-icici-logo.jpg" data-cap="OnePlus: oneplus-pad4-instant-discount-icici-logo.jpg"><img src="evidence/oneplus-pad4-instant-discount-icici-logo.jpg" alt="OnePlus evidence" loading="lazy"></a><figcaption><strong>OnePlus</strong> oneplus-pad4-instant-discount-icici-logo.jpg</figcaption></figure><figure class="shot" data-f="text"><a href="evidence/apple-buy-iphone.jpg" data-cap="Apple: apple-buy-iphone.jpg"><img src="evidence/apple-buy-iphone.jpg" alt="Apple evidence" loading="lazy"></a><figcaption><strong>Apple</strong> apple-buy-iphone.jpg</figcaption></figure><figure class="shot" data-f="text"><a href="evidence/google-store-pixel11-icici-text.jpg" data-cap="Google Store: google-store-pixel11-icici-text.jpg"><img src="evidence/google-store-pixel11-icici-text.jpg" alt="Google Store evidence" loading="lazy"></a><figcaption><strong>Google Store</strong> google-store-pixel11-icici-text.jpg</figcaption></figure><figure class="shot" data-f="text"><a href="evidence/xiaomi-buy-page-icici-text.jpg" data-cap="Xiaomi: xiaomi-buy-page-icici-text.jpg"><img src="evidence/xiaomi-buy-page-icici-text.jpg" alt="Xiaomi evidence" loading="lazy"></a><figcaption><strong>Xiaomi</strong> xiaomi-buy-page-icici-text.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/tata-cliq-homepage.jpg" data-cap="Tata CLiQ: tata-cliq-homepage.jpg"><img src="evidence/tata-cliq-homepage.jpg" alt="Tata CLiQ evidence" loading="lazy"></a><figcaption><strong>Tata CLiQ</strong> tata-cliq-homepage.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/reliance-digital-carousel-hdfc.png" data-cap="Reliance Digital: reliance-digital-carousel-hdfc.png"><img src="evidence/reliance-digital-carousel-hdfc.png" alt="Reliance Digital evidence" loading="lazy"></a><figcaption><strong>Reliance Digital</strong> reliance-digital-carousel-hdfc.png</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/reliance-digital-carousel-idfc.png" data-cap="Reliance Digital: reliance-digital-carousel-idfc.png"><img src="evidence/reliance-digital-carousel-idfc.png" alt="Reliance Digital evidence" loading="lazy"></a><figcaption><strong>Reliance Digital</strong> reliance-digital-carousel-idfc.png</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/reliance-digital-carousel-pnb.png" data-cap="Reliance Digital: reliance-digital-carousel-pnb.png"><img src="evidence/reliance-digital-carousel-pnb.png" alt="Reliance Digital evidence" loading="lazy"></a><figcaption><strong>Reliance Digital</strong> reliance-digital-carousel-pnb.png</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/reliance-digital-carousel-sbi.png" data-cap="Reliance Digital: reliance-digital-carousel-sbi.png"><img src="evidence/reliance-digital-carousel-sbi.png" alt="Reliance Digital evidence" loading="lazy"></a><figcaption><strong>Reliance Digital</strong> reliance-digital-carousel-sbi.png</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/hp-product-page-offers-panel.jpg" data-cap="HP: hp-product-page-offers-panel.jpg"><img src="evidence/hp-product-page-offers-panel.jpg" alt="HP evidence" loading="lazy"></a><figcaption><strong>HP</strong> hp-product-page-offers-panel.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/sony-shopatsc-product-bank-offers.jpg" data-cap="Sony: sony-shopatsc-product-bank-offers.jpg"><img src="evidence/sony-shopatsc-product-bank-offers.jpg" alt="Sony evidence" loading="lazy"></a><figcaption><strong>Sony</strong> sony-shopatsc-product-bank-offers.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/ajio-homepage.jpg" data-cap="Ajio: ajio-homepage.jpg"><img src="evidence/ajio-homepage.jpg" alt="Ajio evidence" loading="lazy"></a><figcaption><strong>Ajio</strong> ajio-homepage.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/ajio-product-page.jpg" data-cap="Ajio: ajio-product-page.jpg"><img src="evidence/ajio-product-page.jpg" alt="Ajio evidence" loading="lazy"></a><figcaption><strong>Ajio</strong> ajio-product-page.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/zomato-restaurant-rbl-offer.jpg" data-cap="Zomato: zomato-restaurant-rbl-offer.jpg"><img src="evidence/zomato-restaurant-rbl-offer.jpg" alt="Zomato evidence" loading="lazy"></a><figcaption><strong>Zomato</strong> zomato-restaurant-rbl-offer.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/samsung-product-page-axis-card.jpg" data-cap="Samsung: samsung-product-page-axis-card.jpg"><img src="evidence/samsung-product-page-axis-card.jpg" alt="Samsung evidence" loading="lazy"></a><figcaption><strong>Samsung</strong> samsung-product-page-axis-card.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/swiggy-restaurant-page.jpg" data-cap="Swiggy: swiggy-restaurant-page.jpg"><img src="evidence/swiggy-restaurant-page.jpg" alt="Swiggy evidence" loading="lazy"></a><figcaption><strong>Swiggy</strong> swiggy-restaurant-page.jpg</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/swiggy-restaurant-hdfc-zoom.png" data-cap="Swiggy: swiggy-restaurant-hdfc-zoom.png"><img src="evidence/swiggy-restaurant-hdfc-zoom.png" alt="Swiggy evidence" loading="lazy"></a><figcaption><strong>Swiggy</strong> swiggy-restaurant-hdfc-zoom.png</figcaption></figure><figure class="shot" data-f="rival"><a href="evidence/goibibo-hotel-page.jpg" data-cap="Goibibo: goibibo-hotel-page.jpg"><img src="evidence/goibibo-hotel-page.jpg" alt="Goibibo evidence" loading="lazy"></a><figcaption><strong>Goibibo</strong> goibibo-hotel-page.jpg</figcaption></figure><figure class="shot" data-f="none"><a href="evidence/lg-product-page-generic-cashback.jpg" data-cap="LG: lg-product-page-generic-cashback.jpg"><img src="evidence/lg-product-page-generic-cashback.jpg" alt="LG evidence" loading="lazy"></a><figcaption><strong>LG</strong> lg-product-page-generic-cashback.jpg</figcaption></figure><figure class="shot" data-f="none"><a href="evidence/dell-product-page-special-offers.jpg" data-cap="Dell: dell-product-page-special-offers.jpg"><img src="evidence/dell-product-page-special-offers.jpg" alt="Dell evidence" loading="lazy"></a><figcaption><strong>Dell</strong> dell-product-page-special-offers.jpg</figcaption></figure></div>
+</section>
+
+<section id="deck">
+  <h2>Presentation</h2>
+  <p class="sub">Nine-slide deck for the alliances team</p>
+  <div class="deck-actions">
+    <a class="btn" href="deck.html" target="_blank" rel="noopener">Open the deck</a>
+    <a class="btn alt" href="files/icici-logo-visibility-audit.pptx" download>Download PPTX</a>
+    <a class="btn alt" href="files/icici-logo-visibility-audit.pdf" target="_blank" rel="noopener">Open PDF</a>
+    <a class="btn alt" href="files/audit-findings.csv" download>Download findings CSV</a>
+  </div>
+  <div class="slides"><a href="slides/slide1.png" data-cap="Slide 1"><img src="slides/slide1.png" alt="Slide 1" loading="lazy"></a><a href="slides/slide2.png" data-cap="Slide 2"><img src="slides/slide2.png" alt="Slide 2" loading="lazy"></a><a href="slides/slide3.png" data-cap="Slide 3"><img src="slides/slide3.png" alt="Slide 3" loading="lazy"></a><a href="slides/slide4.png" data-cap="Slide 4"><img src="slides/slide4.png" alt="Slide 4" loading="lazy"></a><a href="slides/slide5.png" data-cap="Slide 5"><img src="slides/slide5.png" alt="Slide 5" loading="lazy"></a><a href="slides/slide6.png" data-cap="Slide 6"><img src="slides/slide6.png" alt="Slide 6" loading="lazy"></a><a href="slides/slide7.png" data-cap="Slide 7"><img src="slides/slide7.png" alt="Slide 7" loading="lazy"></a><a href="slides/slide8.png" data-cap="Slide 8"><img src="slides/slide8.png" alt="Slide 8" loading="lazy"></a><a href="slides/slide9.png" data-cap="Slide 9"><img src="slides/slide9.png" alt="Slide 9" loading="lazy"></a></div>
+</section>
+
+<section id="method">
+  <h2>How the audit was done</h2>
+  <p class="sub">What was checked, and what was not</p>
+  <div class="method">
+    <div class="panel">
+      <h3>Covered</h3>
+      <ul>
+        <li>Top 20 partner brands from the ICICI Bank Festive Bonanza page</li>
+        <li>Each brand's homepage or offers page on desktop web</li>
+        <li>One product, buy, restaurant or hotel page per brand</li>
+        <li>Page-code scans for "icici" in image names, alt text and page text, plus screenshots</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Not covered</h3>
+      <ul>
+        <li>Checkout and payment pages, which need a sign-in or a booking</li>
+        <li>Brand mobile apps</li>
+        <li>Tata CLiQ and Reliance Digital product pages have text scans only, no screenshots</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="log">
+  <h2>Activity log</h2>
+  <p class="sub">Dated record of every step on this project</p>
+  <div class="log"><p>Dated record of every activity on this project. Newest entries at the bottom.</p>
+<h3>October 27, 2026</h3>
+<h4>1. Brand list from Festive Bonanza</h4>
+<ul>
+<li>Source: <a href="https://www.icici.bank.in/campaigns/bonanza/index" rel="noopener">https://www.icici.bank.in/campaigns/bonanza/index</a></li>
+<li>The page has no ranking, so the top 20 = the 5 hero-carousel brands (Amazon, Google Pixel, Reliance Digital, MakeMyTrip, Apple) plus the most prominent brands with live credit card offers across electronics, travel, fashion and food.</li>
+</ul>
+<h4>2. Website audit (homepage and offer pages)</h4>
+<ul>
+<li>Checked all 20 brand websites for the ICICI Bank logo using page-code scans (image names, alt text, page text) plus screenshots.</li>
+<li>Result: 4 logo shown (Amazon, Vijay Sales, Cleartrip, MakeMyTrip), 1 text only (Apple), 4 rival banks shown without ICICI (Tata CLiQ, Reliance Digital, Ajio, Goibibo), 11 no bank logos at all.</li>
+<li>Data: <code>data/audit-findings.csv</code>. Evidence: <code>screenshots/evidence/</code>.</li>
+<li>Limits: desktop web only; no apps, no checkout. Logos baked into banner images were confirmed visually only where screenshotted.</li>
+</ul>
+<h4>3. Product page check (started, paused)</h4>
+<ul>
+<li>Reliance Digital product page (Oppo K13 Turbo Pro): Axis, Yes, Federal, PNB, IDFC FIRST, IDBI logos; no ICICI.</li>
+<li>14 brands still to check. Checkout pages need sign-in, so they are out of scope unless a test account is provided.</li>
+</ul>
+<h4>4. Presentation (presentation-builder skill)</h4>
+<ul>
+<li>Audience: alliances team (peers / team leads). Goal: change behavior. Framework: Situation, Complication, Resolution. No agenda slide.</li>
+<li>9 slides: title, 4 of 20 metric, where we show up, rival banks, silent brands, full table, impact, three asks, thank you.</li>
+<li>Outputs: <code>deliverables/icici-logo-visibility-audit.html</code>, <code>.pptx</code>, <code>.pdf</code>. Rebuild with <code>python3 scripts/build_deck.py</code>.</li>
+<li>Verified: HTML in browser; PPTX exported through PowerPoint to PDF and reviewed slide by slide (<code>screenshots/deck-preview/</code>).</li>
+</ul>
+<h4>5. Project folder created</h4>
+<ul>
+<li>All work for this project is saved in <code>/Users/user3/Desktop/Ulkrisht/icici-logo-audit/</code>. Downloaded files go in <code>downloads/</code>.</li>
+</ul>
+<h3>October 28, 2026</h3>
+<h4>6. Product page check (completed)</h4>
+<ul>
+<li>Checked one product page (or buy / restaurant / hotel page) for each of the 15 brands that showed no ICICI logo on the homepage. Product used for each is in <code>data/audit-findings.csv</code>.</li>
+<li>ICICI logo found: Croma (first card in Super Savings), OnePlus (inside the Instant Discount pop-up, one click deep).</li>
+<li>ICICI in text only: Google Store (Pixel 11 page), Xiaomi (first offer on buy page).</li>
+<li>Other banks shown, no ICICI: Samsung (Axis co-brand card), Sony (Yes, Kotak, BOB), HP (SBI, Axis, HDFC, Kotak, Yes, Amex), Tata CLiQ (DBS), Swiggy (HDFC logo), Zomato (RBL).</li>
+<li>No bank offers on product page: LG (generic cards), Dell, Ajio (low-value item), Goibibo (hotel page before room selection).</li>
+<li>Not done: checkout and payment pages (need sign-in or booking), mobile apps.</li>
+<li>New evidence in <code>screenshots/evidence/</code> (14 files). Tata CLiQ and Reliance Digital product-page findings are text-scan only, no screenshot.</li>
+</ul>
+<h4>7. Deck updated</h4>
+<ul>
+<li>Overall status now: 6 logo shown, 3 text only, 9 rivals shown, 2 no bank shown.</li>
+<li>Slides changed: 2 (6 of 20), 3 (six wins), 4 (nine rival brands), 5 (three text-only brands, replaces the old &quot;no bank logos&quot; slide), 6 (table), 8 (new asks).</li>
+<li>Fixed HTML layout: card text overflow on slide 3 and table height on slide 6.</li>
+<li>Verified: PPTX exported through PowerPoint and reviewed; HTML checked in browser with every slide&#x27;s content above the i-Man zone.</li>
+</ul>
+<h4>8. Project folder moved</h4>
+<ul>
+<li>Moved the whole project to <code>/Users/user3/Desktop/Ulkrisht/icici-logo-audit/</code> at the user&#x27;s request. Paths in <code>scripts/build_deck.py</code> updated to match.</li>
+</ul>
+<h4>9. Website on Netlify</h4>
+<ul>
+<li>Built a website from the whole project: summary numbers, all 20 brand cards with filters, evidence gallery, deck (HTML, PPTX, PDF), findings CSV, method and limits, and this activity log.</li>
+<li>Live at <a href="https://icici-logo-audit.netlify.app" rel="noopener">https://icici-logo-audit.netlify.app</a> (Netlify project <code>icici-logo-audit</code>, site ID 5a322c5a-4063-432f-80ad-e5ce19a5b18e).</li>
+<li>Site is public to anyone with the link, but hidden from search engines (noindex headers and robots.txt). No password set.</li>
+<li>Rebuild with <code>python3 scripts/build_site.py</code>, which writes the <code>site/</code> folder. Redeploy through Netlify after any change.</li>
+</ul>
+<h4>10. Site packaged for another Netlify account</h4>
+<ul>
+<li>Created <code>deliverables/icici-logo-audit-site.zip</code> (53 files, 2.7 MB, <code>index.html</code> at the top level) for drag-and-drop upload at <a href="https://app.netlify.com/drop" rel="noopener">https://app.netlify.com/drop</a> while signed in to the other account.</li>
+</ul>
+<h4>11. Daily tracker for all Festive Bonanza brands</h4>
+<ul>
+<li>Scope widened from the top 20 to every brand on the Festive Bonanza page: 141 offers, 97 brands (card and network offers excluded). Brand websites are listed in <code>data/brands.json</code>; 7 brands have no known website yet (Bookmark, Furniselan, Hazel Kitchenware, INSPL, OneSky, Solara Home, Vergo).</li>
+<li><code>scripts/daily_check.py</code> reads the Bonanza page, opens each brand&#x27;s homepage in Google Chrome, and looks for ICICI in image names and alt text, in page text, and inside images using macOS text recognition (<code>scripts/ocr.swift</code>, built to <code>scripts/bin/ocr</code>). Saves <code>data/daily/&lt;date&gt;/results.json</code> and a screenshot per brand.</li>
+<li>First run, October 28, 2026: 17 ICICI logo shown, 3 named in text only, 16 other banks only, 52 no bank shown, 2 could not be checked (Ajio blocks automated browsers; Nomad did not load), 7 website needed.</li>
+<li>Homepage only. The 20-brand baseline also checked product pages, so some brands differ (for example OnePlus shows the logo only one click deep).</li>
+<li>Website rebuilt: <code>index.html</code> is now the daily tracker with a calendar (pick any date to see that day&#x27;s results and changes from the previous day). The original 20-brand audit moved to <code>audit.html</code>.</li>
+<li><code>deliverables/icici-logo-tracker-site.zip</code> is the site for drag-and-drop upload to the user&#x27;s own Netlify account. Rebuilt by <code>python3 scripts/build_site.py</code>.</li>
+<li>Scheduled task &quot;ICICI logo daily tracker&quot; runs every day at about 9:00 AM IST while the Claude app is open. It deploys automatically only once <code>data/netlify-site.json</code> holds the target site ID and a Netlify connector for that account is connected.</li>
+<li>Update: the user uploads the zip to their own Netlify account themselves. The daily task no longer deploys; it only runs the check and rebuilds <code>deliverables/icici-logo-tracker-site.zip</code>.</li>
+</ul>
+<h3>November 6, 2026</h3>
+<h4>12. Daily check (one run)</h4>
+<ul>
+<li>Run on November 6, 2026 (2:14 PM IST): 144 offers, 104 brands. 14 ICICI logo shown, 3 text only, 16 other banks only, 51 no bank shown, 4 could not be checked, 16 website needed.</li>
+<li>9 new brands on the Bonanza page with no website set: Blue Star, Daikin, Native, GIVA, PNGS Reva Diamond, Jewelbox, WearKatha, Fitelo, Lifecell. Cleartrip and The Sleep Company were not on the page that day.</li>
+<li>The site and zip were not rebuilt after this run. No other runs happened between October 28 and November 17.</li>
+</ul>
+<h3>November 17, 2026</h3>
+<h4>13. Scheduled task found missing</h4>
+<ul>
+<li>The &quot;ICICI logo daily tracker&quot; scheduled task no longer exists, so the check did not run daily. Not recreated yet; waiting for the user&#x27;s decision.</li>
+</ul>
+<h4>14. New brand websites added</h4>
+<ul>
+<li>Added to <code>data/brands.json</code>: Blue Star (bluestarindia.com), Daikin (daikinindia.com), Native by Urban Company (urbancompany.com/native), GIVA (giva.co), PNGS Reva Diamond (revadiamonds.com), Jewelbox (jewelbox.co.in), WearKatha (wearkatha.com), Fitelo (fitelo.co), LifeCell (lifecell.in). Each site was opened and its page title matched the brand.</li>
+<li>New brand today: Origem (in-store jewellery offer). Website not confirmed; added with no URL, shows as &quot;website needed&quot;.</li>
+</ul>
+<h4>15. Daily check (November 17, 2026)</h4>
+<ul>
+<li>142 offers, 102 brands. 16 ICICI logo shown, 3 text only, 15 other banks only, 54 no bank shown, 6 could not be checked, 8 website needed.</li>
+<li>Changes since November 6: Amazon and Sleepyhead now show the ICICI logo (were other banks only); HP now shows other banks only (was no bank shown).</li>
+<li>Could not be checked: Ajio and Fitelo (block automated browsers, HTTP 403), WearKatha (page did not load), MakeMyTrip, Goibibo and Nomad (page did not load). Tried disabling HTTP/2 for MakeMyTrip and Goibibo; it did not help, so the change was reverted.</li>
+<li>Site rebuilt; <code>deliverables/icici-logo-tracker-site.zip</code> (22.8 MB) now covers October 28, November 6 and November 17. Upload it to Netlify at <a href="https://app.netlify.com/drop" rel="noopener">https://app.netlify.com/drop</a> to update the live site.</li>
+</ul>
+<h3>November 19, 2026</h3>
+<h4>16. Daily scheduled task recreated</h4>
+<ul>
+<li>New scheduled task &quot;ICICI logo daily tracker&quot; (ID <code>icici-logo-daily-tracker-2</code>) runs every day at about 9:00 AM IST while the Claude app is open; if the app is closed, it runs on next launch.</li>
+<li>Each run: runs <code>scripts/daily_check.py</code>, rebuilds the site and <code>deliverables/icici-logo-tracker-site.zip</code>, compares with the previous day, and adds an entry to this log. It does not deploy; the user uploads the zip to Netlify.</li>
+<li>Saved in Bypass permissions mode (runs without asking). A first run was started on November 19, 2026.</li>
+</ul></div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <img src="assets/icici-iman.png" alt="">
+  <span>ICICI Bank logo visibility audit · Last checked October 28, 2026</span>
+</div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button type="button" aria-label="Close">&times;</button>
+  <img alt=""><p></p>
+</div>
+
+<script>
+const chips = document.querySelectorAll('#filters .chip');
+chips.forEach(c => c.addEventListener('click', () => {
+  chips.forEach(x => x.classList.toggle('on', x === c));
+  const f = c.dataset.f;
+  document.querySelectorAll('.brand, .shot').forEach(el => {
+    el.hidden = f !== 'all' && el.dataset.f !== f;
+  });
+}));
+const lb = document.getElementById('lb');
+const lbImg = lb.querySelector('img'), lbCap = lb.querySelector('p');
+document.addEventListener('click', ev => {
+  const a = ev.target.closest('a[data-cap]');
+  if (!a) return;
+  ev.preventDefault();
+  lbImg.src = a.getAttribute('href'); lbCap.textContent = a.dataset.cap;
+  lb.classList.add('open');
+});
+lb.addEventListener('click', ev => { if (ev.target !== lbImg) lb.classList.remove('open'); });
+document.addEventListener('keydown', ev => { if (ev.key === 'Escape') lb.classList.remove('open'); });
+</script>
+</body>
+</html>

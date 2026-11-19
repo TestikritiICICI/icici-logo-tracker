@@ -1,0 +1,888 @@
+{
+  "_note": "Brand websites for the daily tracker. 'aliases' are the logo names used on the Festive Bonanza page (matched ignoring case, spaces and punctuation). Set 'url' to null when unknown; the tracker flags those as 'Website needed'. 'extra_urls' are optional deeper pages (offers or product pages) to check as well.",
+  "brands": [
+    {
+      "name": "Amazon",
+      "category": "E-commerce",
+      "aliases": [
+        "amazon"
+      ],
+      "url": "https://www.amazon.in/"
+    },
+    {
+      "name": "Apple",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "iPhone 18",
+        "iPhone18",
+        "iPhone Duo",
+        "MacBook Pro",
+        "iPad",
+        "Apple Watch",
+        "AirPods"
+      ],
+      "url": "https://www.apple.com/in/"
+    },
+    {
+      "name": "Google Store",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Google Pixel",
+        "googlepixel"
+      ],
+      "url": "https://store.google.com/in/"
+    },
+    {
+      "name": "OnePlus",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "oneplus"
+      ],
+      "url": "https://www.oneplus.in/"
+    },
+    {
+      "name": "Nothing",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "nothing"
+      ],
+      "url": "https://in.nothing.tech/"
+    },
+    {
+      "name": "Xiaomi",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "MI"
+      ],
+      "url": "https://www.mi.com/in/"
+    },
+    {
+      "name": "OPPO",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "oppo"
+      ],
+      "url": "https://www.oppo.com/in/"
+    },
+    {
+      "name": "Reliance Digital",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "reliance digital"
+      ],
+      "url": "https://www.reliancedigital.in/"
+    },
+    {
+      "name": "Croma",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "croma"
+      ],
+      "url": "https://www.croma.com/"
+    },
+    {
+      "name": "Vijay Sales",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "vijay sales"
+      ],
+      "url": "https://www.vijaysales.com/"
+    },
+    {
+      "name": "HP",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "HP"
+      ],
+      "url": "https://www.hp.com/in-en/shop/"
+    },
+    {
+      "name": "Acer",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "acer"
+      ],
+      "url": "https://store.acer.com/en-in/"
+    },
+    {
+      "name": "Dell",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "dell"
+      ],
+      "url": "https://www.dell.com/en-in"
+    },
+    {
+      "name": "Microsoft Surface",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Microsoft Surface"
+      ],
+      "url": "https://www.microsoft.com/en-in/surface"
+    },
+    {
+      "name": "Sony",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "sony"
+      ],
+      "url": "https://www.shopatsc.com/"
+    },
+    {
+      "name": "LG",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "LG"
+      ],
+      "url": "https://www.lg.com/in/"
+    },
+    {
+      "name": "Samsung",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Samsung"
+      ],
+      "url": "https://www.samsung.com/in/"
+    },
+    {
+      "name": "Godrej",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "godrej"
+      ],
+      "url": "https://www.godrej.com/"
+    },
+    {
+      "name": "Bose",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "bose"
+      ],
+      "url": "https://www.boseindia.com/"
+    },
+    {
+      "name": "Bosch",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "bosch"
+      ],
+      "url": "https://www.bosch-home.in/"
+    },
+    {
+      "name": "Haier",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "haier"
+      ],
+      "url": "https://www.haier.com/in/"
+    },
+    {
+      "name": "JBL",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "jbl"
+      ],
+      "url": "https://in.jbl.com/"
+    },
+    {
+      "name": "IFB",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "ifb"
+      ],
+      "url": "https://www.ifbappliances.com/"
+    },
+    {
+      "name": "Atomberg",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "atomberg"
+      ],
+      "url": "https://atomberg.com/"
+    },
+    {
+      "name": "Philips",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "philips",
+        "Phillips"
+      ],
+      "url": "https://www.philips.co.in/"
+    },
+    {
+      "name": "Hisense",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Hisense"
+      ],
+      "url": "https://www.hisense-india.com/"
+    },
+    {
+      "name": "Onida",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "onida"
+      ],
+      "url": "https://www.onida.com/"
+    },
+    {
+      "name": "TCL",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "tcl"
+      ],
+      "url": "https://www.tcl.com/in/en"
+    },
+    {
+      "name": "Toshiba Midea",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Toshiba Midea",
+        "Toshiba"
+      ],
+      "url": "https://www.toshiba-lifestyle.com/in/"
+    },
+    {
+      "name": "Carrier Midea",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Carrier Midea"
+      ],
+      "url": "https://www.midea.com/in"
+    },
+    {
+      "name": "Lumio",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Lumio"
+      ],
+      "url": "https://lumio.co.in/"
+    },
+    {
+      "name": "A.O. Smith",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "A.O. Smith"
+      ],
+      "url": "https://www.aosmithindia.com/"
+    },
+    {
+      "name": "Electrolux",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Electrolux"
+      ],
+      "url": "https://www.electrolux.in/"
+    },
+    {
+      "name": "Nespresso",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Nespresso"
+      ],
+      "url": "https://www.nespresso.com/in/en/"
+    },
+    {
+      "name": "Sharp",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "SHARP"
+      ],
+      "url": "https://in.sharp/"
+    },
+    {
+      "name": "Kent RO",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Kent RO"
+      ],
+      "url": "https://www.kent.co.in/"
+    },
+    {
+      "name": "Eureka Forbes",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "Eureka Forbes"
+      ],
+      "url": "https://www.eurekaforbes.com/"
+    },
+    {
+      "name": "Pureit",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "pureit"
+      ],
+      "url": "https://www.pureitwater.com/"
+    },
+    {
+      "name": "BytePe",
+      "category": "Mobiles and electronics",
+      "aliases": [
+        "BytePe"
+      ],
+      "url": "https://www.bytepe.com/"
+    },
+    {
+      "name": "MakeMyTrip",
+      "category": "Travel",
+      "aliases": [
+        "MMT"
+      ],
+      "url": "https://www.makemytrip.com/"
+    },
+    {
+      "name": "Goibibo",
+      "category": "Travel",
+      "aliases": [
+        "goibibo"
+      ],
+      "url": "https://www.goibibo.com/"
+    },
+    {
+      "name": "EaseMyTrip",
+      "category": "Travel",
+      "aliases": [
+        "EMT"
+      ],
+      "url": "https://www.easemytrip.com/"
+    },
+    {
+      "name": "Air India",
+      "category": "Travel",
+      "aliases": [
+        "Air India",
+        "AirIndia"
+      ],
+      "url": "https://www.airindia.com/"
+    },
+    {
+      "name": "Yatra",
+      "category": "Travel",
+      "aliases": [
+        "yatra"
+      ],
+      "url": "https://www.yatra.com/"
+    },
+    {
+      "name": "ixigo",
+      "category": "Travel",
+      "aliases": [
+        "ixigo"
+      ],
+      "url": "https://www.ixigo.com/"
+    },
+    {
+      "name": "Paytm Flights",
+      "category": "Travel",
+      "aliases": [
+        "Paytm Flights",
+        "PaytmFlights"
+      ],
+      "url": "https://tickets.paytm.com/flights/"
+    },
+    {
+      "name": "Cleartrip",
+      "category": "Travel",
+      "aliases": [
+        "cleartrip"
+      ],
+      "url": "https://www.cleartrip.com/"
+    },
+    {
+      "name": "Akbar Travels",
+      "category": "Travel",
+      "aliases": [
+        "Akbar Travels"
+      ],
+      "url": "https://www.akbartravels.com/"
+    },
+    {
+      "name": "PickYourTrail",
+      "category": "Travel",
+      "aliases": [
+        "PickYourTrails"
+      ],
+      "url": "https://www.pickyourtrail.com/"
+    },
+    {
+      "name": "The Paul John Hotels",
+      "category": "Travel",
+      "aliases": [
+        "The Paul John Hotel & Resorts"
+      ],
+      "url": "https://www.pauljohnhotels.com/"
+    },
+    {
+      "name": "Elivaas",
+      "category": "Travel",
+      "aliases": [
+        "Elivaas"
+      ],
+      "url": "https://www.elivaas.com/"
+    },
+    {
+      "name": "Alaya Stays",
+      "category": "Travel",
+      "aliases": [
+        "Alaya Stays",
+        "Alaya satay"
+      ],
+      "url": "https://www.alayastays.com/"
+    },
+    {
+      "name": "Justa Hotels",
+      "category": "Travel",
+      "aliases": [
+        "Justa Hotels",
+        "JustaHotels"
+      ],
+      "url": "https://www.justahotels.com/"
+    },
+    {
+      "name": "Bookmark",
+      "category": "Travel",
+      "aliases": [
+        "Bookmark"
+      ],
+      "url": null
+    },
+    {
+      "name": "Cordelia Cruises",
+      "category": "Travel",
+      "aliases": [
+        "Cordelia Cruises"
+      ],
+      "url": "https://www.cordeliacruises.com/"
+    },
+    {
+      "name": "Avis",
+      "category": "Travel",
+      "aliases": [
+        "Avis"
+      ],
+      "url": "https://www.avis.co.in/"
+    },
+    {
+      "name": "Carzonrent",
+      "category": "Travel",
+      "aliases": [
+        "Carzonrent"
+      ],
+      "url": "https://www.carzonrent.com/"
+    },
+    {
+      "name": "Nasher Miles",
+      "category": "Travel",
+      "aliases": [
+        "Nasher Miles"
+      ],
+      "url": "https://nashermiles.com/"
+    },
+    {
+      "name": "Nomad",
+      "category": "Travel",
+      "aliases": [
+        "nomad"
+      ],
+      "url": "https://www.getnomad.app/"
+    },
+    {
+      "name": "Tata CLiQ Fashion",
+      "category": "Fashion and jewellery",
+      "aliases": [
+        "Tata Cliq Fashion"
+      ],
+      "url": "https://www.tatacliq.com/"
+    },
+    {
+      "name": "Tata CLiQ Luxury",
+      "category": "Fashion and jewellery",
+      "aliases": [
+        "Tata Cliq Luxury"
+      ],
+      "url": "https://luxury.tatacliq.com/"
+    },
+    {
+      "name": "Ajio",
+      "category": "Fashion and jewellery",
+      "aliases": [
+        "ajio"
+      ],
+      "url": "https://www.ajio.com/"
+    },
+    {
+      "name": "OneSky",
+      "category": "Fashion and jewellery",
+      "aliases": [
+        "OneSky"
+      ],
+      "url": null
+    },
+    {
+      "name": "Surat Diamonds",
+      "category": "Fashion and jewellery",
+      "aliases": [
+        "Surat Diamonds",
+        "suratdaimonds"
+      ],
+      "url": "https://www.suratdiamond.com/"
+    },
+    {
+      "name": "Zomato",
+      "category": "Food ordering and dining",
+      "aliases": [
+        "zomato"
+      ],
+      "url": "https://www.zomato.com/"
+    },
+    {
+      "name": "Swiggy",
+      "category": "Food ordering and dining",
+      "aliases": [
+        "Swiggy"
+      ],
+      "url": "https://www.swiggy.com/"
+    },
+    {
+      "name": "Urban Ladder",
+      "category": "Home furnishing",
+      "aliases": [
+        "urban ladder"
+      ],
+      "url": "https://www.urbanladder.com/"
+    },
+    {
+      "name": "Pepperfry",
+      "category": "Home furnishing",
+      "aliases": [
+        "Pepperfry"
+      ],
+      "url": "https://www.pepperfry.com/"
+    },
+    {
+      "name": "Duroflex",
+      "category": "Home furnishing",
+      "aliases": [
+        "Duroflex"
+      ],
+      "url": "https://www.duroflexworld.com/"
+    },
+    {
+      "name": "The Sleep Company",
+      "category": "Home furnishing",
+      "aliases": [
+        "The Sleep Company"
+      ],
+      "url": "https://thesleepcompany.in/"
+    },
+    {
+      "name": "Furniselan",
+      "category": "Home furnishing",
+      "aliases": [
+        "Furniselan"
+      ],
+      "url": null
+    },
+    {
+      "name": "Cuminco",
+      "category": "Home furnishing",
+      "aliases": [
+        "Cuminco"
+      ],
+      "url": "https://cuminco.com/"
+    },
+    {
+      "name": "KitchenOre",
+      "category": "Home furnishing",
+      "aliases": [
+        "KitchenOre"
+      ],
+      "url": "https://kitchenore.com/"
+    },
+    {
+      "name": "Hazel Kitchenware",
+      "category": "Home furnishing",
+      "aliases": [
+        "Hazel Kitchenware"
+      ],
+      "url": null
+    },
+    {
+      "name": "Solara Home",
+      "category": "Home furnishing",
+      "aliases": [
+        "Solara Home"
+      ],
+      "url": null
+    },
+    {
+      "name": "Haus & Kinder",
+      "category": "Home furnishing",
+      "aliases": [
+        "Haus & Kinder"
+      ],
+      "url": "https://hausandkinder.com/"
+    },
+    {
+      "name": "Sleepyhead",
+      "category": "Home furnishing",
+      "aliases": [
+        "sleepyhead"
+      ],
+      "url": "https://mysleepyhead.com/"
+    },
+    {
+      "name": "Sleepycat",
+      "category": "Home furnishing",
+      "aliases": [
+        "sleepycat"
+      ],
+      "url": "https://www.sleepycat.in/"
+    },
+    {
+      "name": "Vergo",
+      "category": "Home furnishing",
+      "aliases": [
+        "vergo"
+      ],
+      "url": null
+    },
+    {
+      "name": "Interior Company",
+      "category": "Home furnishing",
+      "aliases": [
+        "Interior Company"
+      ],
+      "url": "https://interiorcompany.com/"
+    },
+    {
+      "name": "Nilkamal Furniture",
+      "category": "Home furnishing",
+      "aliases": [
+        "Nilkamal Furniture"
+      ],
+      "url": "https://www.nilkamalfurniture.com/"
+    },
+    {
+      "name": "Bonito Designs",
+      "category": "Home furnishing",
+      "aliases": [
+        "BonitoDesigns",
+        "Bonito Designs"
+      ],
+      "url": "https://www.bonito.in/"
+    },
+    {
+      "name": "Cleartax",
+      "category": "Other offers",
+      "aliases": [
+        "cleartax"
+      ],
+      "url": "https://cleartax.in/"
+    },
+    {
+      "name": "TaxBuddy",
+      "category": "Other offers",
+      "aliases": [
+        "taxbuddy"
+      ],
+      "url": "https://www.taxbuddy.com/"
+    },
+    {
+      "name": "FNP",
+      "category": "Other offers",
+      "aliases": [
+        "FNP"
+      ],
+      "url": "https://www.fnp.com/"
+    },
+    {
+      "name": "IGP",
+      "category": "Other offers",
+      "aliases": [
+        "igp"
+      ],
+      "url": "https://www.igp.com/"
+    },
+    {
+      "name": "Anvayaa",
+      "category": "Other offers",
+      "aliases": [
+        "Anvayaa"
+      ],
+      "url": "https://www.anvayaa.com/"
+    },
+    {
+      "name": "Apollo Pharmacy",
+      "category": "Other offers",
+      "aliases": [
+        "Apollo Pharmacy"
+      ],
+      "url": "https://www.apollopharmacy.in/"
+    },
+    {
+      "name": "Lilavati Hospital",
+      "category": "Other offers",
+      "aliases": [
+        "Lilavati Hospital and Research Centre"
+      ],
+      "url": "https://www.lilavatihospital.com/"
+    },
+    {
+      "name": "Redcliffe Labs",
+      "category": "Other offers",
+      "aliases": [
+        "Redcliffe Labs"
+      ],
+      "url": "https://redcliffelabs.com/"
+    },
+    {
+      "name": "INSPL",
+      "category": "Other offers",
+      "aliases": [
+        "INSPL"
+      ],
+      "url": null
+    },
+    {
+      "name": "MeraDoc",
+      "category": "Other offers",
+      "aliases": [
+        "meradoc"
+      ],
+      "url": "https://www.meradoc.com/"
+    },
+    {
+      "name": "IndiaFilings",
+      "category": "Other offers",
+      "aliases": [
+        "IndiaFilings"
+      ],
+      "url": "https://www.indiafilings.com/"
+    },
+    {
+      "name": "DocOnline",
+      "category": "Other offers",
+      "aliases": [
+        "DocOnline"
+      ],
+      "url": "https://www.doconline.com/"
+    },
+    {
+      "name": "District",
+      "category": "E-commerce",
+      "aliases": [
+        "district"
+      ],
+      "url": "https://www.district.in/"
+    },
+    {
+      "name": "Blinkit",
+      "category": "E-commerce",
+      "aliases": [
+        "blinkit"
+      ],
+      "url": "https://blinkit.com/"
+    },
+    {
+      "name": "Zepto",
+      "category": "E-commerce",
+      "aliases": [
+        "zepto"
+      ],
+      "url": "https://www.zeptonow.com/"
+    },
+    {
+      "name": "Blue Star",
+      "category": "Home appliances",
+      "aliases": [
+        "bluestar"
+      ],
+      "url": "https://www.bluestarindia.com/"
+    },
+    {
+      "name": "Daikin",
+      "category": "Home appliances",
+      "aliases": [
+        "Daikin"
+      ],
+      "url": "https://www.daikinindia.com/"
+    },
+    {
+      "name": "Native by Urban Company",
+      "category": "Home appliances",
+      "aliases": [
+        "Native"
+      ],
+      "url": "https://www.urbancompany.com/native"
+    },
+    {
+      "name": "GIVA",
+      "category": "Jewellery",
+      "aliases": [
+        "GIVA"
+      ],
+      "url": "https://www.giva.co/"
+    },
+    {
+      "name": "PNGS Reva Diamond",
+      "category": "Jewellery",
+      "aliases": [
+        "PNGS Reva Diamond"
+      ],
+      "url": "https://revadiamonds.com/"
+    },
+    {
+      "name": "Jewelbox",
+      "category": "Jewellery",
+      "aliases": [
+        "Jewelbox"
+      ],
+      "url": "https://jewelbox.co.in/"
+    },
+    {
+      "name": "WearKatha",
+      "category": "Fashion",
+      "aliases": [
+        "WearKatha"
+      ],
+      "url": "https://wearkatha.com/"
+    },
+    {
+      "name": "Fitelo",
+      "category": "Health and wellness",
+      "aliases": [
+        "Fitelo"
+      ],
+      "url": "https://fitelo.co/"
+    },
+    {
+      "name": "LifeCell",
+      "category": "Health and wellness",
+      "aliases": [
+        "Lifecell"
+      ],
+      "url": "https://www.lifecell.in/"
+    },
+    {
+      "name": "Origem",
+      "category": "Jewellery",
+      "aliases": [
+        "Origem"
+      ],
+      "url": null
+    }
+  ],
+  "ignore": [
+    "visa",
+    "mastercard",
+    "rupay",
+    "AmEX",
+    "Emeralde Private Metal Credit Card",
+    "Sapphiro Credit Card",
+    "Adani One ICICI Bank Signature Credit Card",
+    "Adani One ICICI Bank Platinum Credit Card",
+    "Coral RUPAY Credit Card",
+    "ICICI Bank Gift Card"
+  ]
+}

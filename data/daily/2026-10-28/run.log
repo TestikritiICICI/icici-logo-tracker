@@ -1,0 +1,93 @@
+Reading Festive Bonanza page...
+Checking 97 brands...
+  Ajio                     error
+  Akbar Travels            logo
+  A.O. Smith               none
+  Acer                     none
+  Air India                rival
+  Anvayaa                  none
+  Alaya Stays              rival
+  Apollo Pharmacy          rival
+  Apple                    error
+  Atomberg                 error
+  Avis                     error
+  Blinkit                  error
+  Bonito Designs           error
+  Bose                     error
+  Bosch                    error
+  Carrier Midea            error
+  Carzonrent               error
+  BytePe                   error
+  Cleartax                 error
+  Amazon                   rival
+  Cordelia Cruises         error
+  Croma                    logo
+  Cleartrip                logo
+  Cuminco                  none
+  Dell                     none
+  District                 rival
+  DocOnline                rival
+  Duroflex                 logo
+  Elivaas                  logo
+  Eureka Forbes            none
+  EaseMyTrip               rival
+  Electrolux               none
+  Godrej                   none
+  FNP                      none
+  Goibibo                  none
+  Google Store             none
+  Hisense                  error
+  Haier                    none
+  HP                       rival
+  IFB                      none
+  IndiaFilings             logo
+  Haus & Kinder            none
+  IGP                      none
+  JBL                      none
+  Interior Company         none
+  KitchenOre               none
+  Justa Hotels             none
+  Kent RO                  none
+  Lilavati Hospital        none
+  LG                       none
+  MeraDoc                  none
+  MakeMyTrip               logo
+  Microsoft Surface        none
+  Lumio                    error
+  Nasher Miles             none
+  Nespresso                logo
+  Nilkamal Furniture       logo
+  Nothing                  none
+  OPPO                     none
+  Nomad                    error
+  OnePlus                  none
+  Paytm Flights            logo
+  Onida                    none
+  Philips                  none
+  Pepperfry                logo
+  Pureit                   none
+  PickYourTrail            rival
+  Redcliffe Labs           none
+  Sharp                    rival
+  Sleepyhead               error
+  Reliance Digital         text
+  Samsung                  none
+  Sleepycat                logo
+  Surat Diamonds           rival
+  Swiggy                   none
+  Sony                     logo
+  TCL                      none
+  Tata CLiQ Fashion        rival
+  Tata CLiQ Luxury         rival
+  TaxBuddy                 none
+  The Paul John Hotels     none
+  Toshiba Midea            none
+  Urban Ladder             logo
+  The Sleep Company        none
+  Xiaomi                   none
+  Zepto                    none
+  Vijay Sales              logo
+  Yatra                    text
+  Zomato                   rival
+  ixigo                    logo
+Saved data/daily/2026-10-28/results.json: {'none': 41, 'rival': 14, 'error': 17, 'logo': 16, 'nourl': 7, 'text': 2}
