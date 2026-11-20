@@ -1,15 +1,16 @@
 {
  "date": "2026-11-20",
- "checked_at": "November 20, 2026, 9:36 AM IST",
+ "run_by": "Mac in India",
+ "checked_at": "November 20, 2026, 9:54 AM IST",
  "bonanza_page_read": true,
  "offers_on_bonanza": 142,
  "counts": {
-  "none": 61,
-  "rival": 17,
-  "error": 5,
+  "none": 58,
+  "rival": 16,
+  "error": 4,
+  "logo": 14,
   "text": 2,
-  "nourl": 8,
-  "logo": 9
+  "nourl": 8
  },
  "new_brands": [],
  "brands": [
@@ -31,7 +32,9 @@
    "error": "",
    "pages_checked": [
     "https://www.aosmithindia.com/"
-   ]
+   ],
+   "rechecked_from": null,
+   "kept_from": "earlier run"
   },
   {
    "name": "Acer",
@@ -51,8 +54,7 @@
    "error": "",
    "pages_checked": [
     "https://store.acer.com/en-in/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Air India",
@@ -76,8 +78,7 @@
    "error": "",
    "pages_checked": [
     "https://www.airindia.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Ajio",
@@ -109,14 +110,16 @@
     "Domestic & International Hotels 12% off up to ₹3,000 on a minimum purchase of ₹5,000 Offer Validity: Sep 18 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer",
     "Visa Servics ₹1,500 off on a minimum purchase of ₹10,000 Offer Validity: Sep 18 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
    ],
-   "status": "none",
+   "status": "rival",
    "url": "https://www.akbartravels.com/",
-   "final_url": "https://www.akbartravels.us/?force=1",
-   "page_title": "AkbarOffshore - Home",
+   "final_url": "https://www.akbartravels.com/in/?lan=en",
+   "page_title": "Akbar Travels - Best Travel Website. Book Flights, Hotels, Holidays & more",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "IDFC FIRST"
+   ],
    "screenshot": "akbartravels.jpg",
    "error": "",
    "pages_checked": [
@@ -152,12 +155,12 @@
    "offers": [
     "10% off up to ₹11,250 on a minimum purchase of ₹2,490 Offer Validity: Oct 21 to Oct 27, 2026 Valid on Credit Cards & Credit Card EMIsAvail Offer"
    ],
-   "status": "none",
+   "status": "logo",
    "url": "https://www.amazon.in/",
    "final_url": "https://www.amazon.in/",
-   "page_title": "Amazon.in",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "page_title": "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+   "icici_logo": "In image (read by OCR): with Amazon Pay ICICI Bank credit card",
+   "icici_logo_count": 1,
    "icici_text": "",
    "rivals": [],
    "screenshot": "amazon.jpg",
@@ -279,8 +282,7 @@
    "error": "",
    "pages_checked": [
     "https://blinkit.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Blue Star",
@@ -300,8 +302,7 @@
    "error": "",
    "pages_checked": [
     "https://www.bluestarindia.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Bonito Designs",
@@ -482,20 +483,21 @@
    "offers": [
     "₹4,000 off on select iPhone 17 Pro & Pro Max models Offer Validity: Sep 15 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "logo",
    "url": "https://www.croma.com/",
    "final_url": "https://www.croma.com/",
    "page_title": "Croma Electronics | Online Electronics Shopping | Buy Electronics Online",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "icici_logo": "In image (read by OCR): IDICICI Bank |OSBI Card",
+   "icici_logo_count": 1,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "HDFC"
+   ],
    "screenshot": "croma.jpg",
-   "error": "Page blocked or did not load (HTTP 200)",
+   "error": "",
    "pages_checked": [
     "https://www.croma.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Cuminco",
@@ -571,15 +573,13 @@
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [
-    "HSBC",
     "SBI"
    ],
    "screenshot": "district.jpg",
    "error": "",
    "pages_checked": [
     "https://www.district.in/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "DocOnline",
@@ -757,7 +757,9 @@
    "error": "",
    "pages_checked": [
     "https://fitelo.co/"
-   ]
+   ],
+   "rechecked_from": null,
+   "kept_from": "earlier run"
   },
   {
    "name": "Furniselan",
@@ -1019,8 +1021,7 @@
    "error": "",
    "pages_checked": [
     "https://interiorcompany.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "JBL",
@@ -1040,8 +1041,7 @@
    "error": "",
    "pages_checked": [
     "https://in.jbl.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Justa Hotels",
@@ -1101,8 +1101,7 @@
    "error": "",
    "pages_checked": [
     "https://kitchenore.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "LG",
@@ -1122,8 +1121,7 @@
    "error": "",
    "pages_checked": [
     "https://www.lg.com/in/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "LifeCell",
@@ -1289,8 +1287,7 @@
    "error": "",
    "pages_checked": [
     "https://www.nespresso.com/in/en/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Nilkamal Furniture",
@@ -1330,7 +1327,9 @@
    "error": "",
    "pages_checked": [
     "https://www.getnomad.app/"
-   ]
+   ],
+   "rechecked_from": null,
+   "kept_from": "earlier run"
   },
   {
    "name": "Nothing",
@@ -1461,15 +1460,17 @@
     "Domestic Flights Up to ₹1,500 off on a minimum purchase of ₹5,000 Use Code: FLYICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
     "International Flights 10% off up to ₹7,500 on a minimum purchase of ₹10,000 Use Code: INTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
    ],
-   "status": "rival",
+   "status": "logo",
    "url": "https://tickets.paytm.com/flights/",
    "final_url": "https://tickets.paytm.com/flights/",
    "page_title": "Flight Ticket Booking Online: Book Cheap Flights | Paytm",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "icici_logo": "In image (read by OCR): ĐICICI Bank",
+   "icici_logo_count": 1,
    "icici_text": "",
    "rivals": [
-    "Amex"
+    "Amex",
+    "Axis",
+    "HDFC"
    ],
    "screenshot": "paytmflights.jpg",
    "error": "",
@@ -1501,8 +1502,7 @@
    "error": "",
    "pages_checked": [
     "https://www.pepperfry.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Philips",
@@ -1585,8 +1585,7 @@
    "error": "",
    "pages_checked": [
     "https://redcliffelabs.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Reliance Digital",
@@ -1606,8 +1605,7 @@
    "error": "",
    "pages_checked": [
     "https://www.reliancedigital.in/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Samsung",
@@ -1661,7 +1659,7 @@
    "url": "https://www.sleepycat.in/",
    "final_url": "https://sleepycat.in/",
    "page_title": "Buy Mattresses & Pillows online from India's Best Mattress Brand",
-   "icici_logo": "In image (read by OCR): ICICI Bank",
+   "icici_logo": "In image (read by OCR): DICICI Bank",
    "icici_logo_count": 1,
    "icici_text": "",
    "rivals": [
@@ -1679,12 +1677,12 @@
    "offers": [
     "5% off up to ₹3,000 on a minimum purchase of ₹15,000 Offer Validity: Sep 12 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "rival",
+   "status": "logo",
    "url": "https://mysleepyhead.com/",
    "final_url": "https://mysleepyhead.com/",
    "page_title": "Buy Sleepyhead Mattresses, Sofas, Recliners, Beds, and Fu...",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "icici_logo": "In image (read by OCR): VICICI Bank",
+   "icici_logo_count": 2,
    "icici_text": "",
    "rivals": [
     "HDFC"
@@ -1712,14 +1710,18 @@
    "offers": [
     "Up to ₹27,500 off on a minimum purchase of ₹18,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "none",
+   "status": "logo",
    "url": "https://www.shopatsc.com/",
    "final_url": "https://shopatsc.com/",
    "page_title": "Online Electronics Store of Sony Products | Sony Center",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "icici_logo": "In image (read by OCR): XHSBC WICICI Bank E] HDFC BANK",
+   "icici_logo_count": 1,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "Bank of Baroda",
+    "HDFC",
+    "Yes Bank"
+   ],
    "screenshot": "sony.jpg",
    "error": "",
    "pages_checked": [
@@ -1969,7 +1971,7 @@
    "final_url": "https://www.vijaysales.com/",
    "page_title": "Vijay Sales: Best Online Electronics Shopping Store in India",
    "icici_logo": "https://www.vijaysales.com/_jcr_content/root/container/container/vscontainer_13986236_117767020/vscontainer/extendedteaser_copy__230550695.coreimg.jpeg/17945508",
-   "icici_logo_count": 2,
+   "icici_logo_count": 1,
    "icici_text": "Get Upto Rs 15,000 Instant Discount on ICICI Bank Credit Cards EMI",
    "rivals": [
     "Amex",
@@ -2027,8 +2029,7 @@
    "error": "",
    "pages_checked": [
     "https://www.mi.com/in/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Yatra",
@@ -2054,8 +2055,7 @@
    "error": "",
    "pages_checked": [
     "https://www.yatra.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Zepto",
@@ -2075,8 +2075,7 @@
    "error": "",
    "pages_checked": [
     "https://www.zeptonow.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "Zomato",
@@ -2098,8 +2097,7 @@
    "error": "",
    "pages_checked": [
     "https://www.zomato.com/"
-   ],
-   "rechecked_from": "Mac in India"
+   ]
   },
   {
    "name": "ixigo",
@@ -2115,7 +2113,7 @@
    "final_url": "https://www.ixigo.com/",
    "page_title": "ixigo - Best Travel Website, Book Flights, Trains, Hotels & Buses",
    "icici_logo": "https://images.ixigo.com/image/upload/offers_and_deals/1ca285d9482e0b774771e55579edbfa3-mansy.webp https://images.ixigo.com/image/upload/offers_and_deals/1ca285",
-   "icici_logo_count": 1,
+   "icici_logo_count": 3,
    "icici_text": "",
    "rivals": [
     "AU",
