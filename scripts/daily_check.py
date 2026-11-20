@@ -169,7 +169,11 @@ def classify_page(data):
 async def run_ocr(png_path):
     """Read text inside the page capture. Uses macOS Vision on a Mac, Tesseract elsewhere (GitHub Actions)."""
     if sys.platform != "darwin":
-        return await run_tesseract(png_path)
+        try:
+            import rapidocr_onnxruntime  # noqa: F401
+        except ImportError:
+            return await run_tesseract(png_path)
+        return await run_rapidocr(png_path)
     proc = await asyncio.create_subprocess_exec(str(OCR_BIN), str(png_path),
                                                 stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.DEVNULL)
     out, _ = await asyncio.wait_for(proc.communicate(), timeout=120)
@@ -181,6 +185,43 @@ async def run_ocr(png_path):
             continue
         rows.append({k: (v / SCALE if k != "t" else v) for k, v in r.items()})
     return rows
+
+
+_rapid = {"engine": None, "lock": None}
+
+
+async def run_rapidocr(png_path):
+    """RapidOCR (PaddleOCR models on ONNX Runtime) on overlapping tiles of the page capture.
+
+    Much better than Tesseract at reading logo and banner text; runs one page at a time.
+    """
+    import numpy as np
+    from rapidocr_onnxruntime import RapidOCR
+    if _rapid["engine"] is None:
+        _rapid["engine"], _rapid["lock"] = RapidOCR(), asyncio.Lock()
+    engine = _rapid["engine"]
+
+    def read_tiles():
+        rows = []
+        with Image.open(png_path) as im:
+            im = im.convert("RGB")
+            tile, overlap = 1400, 150
+            top = 0
+            while top < im.height:
+                h = min(tile, im.height - top)
+                crop = im.crop((0, top, im.width, top + h))
+                result, _ = engine(np.asarray(crop))
+                for box, text, _score in result or []:
+                    xs, ys = [p[0] for p in box], [p[1] for p in box]
+                    rows.append({"t": text, "x": min(xs) / SCALE, "y": (top + min(ys)) / SCALE,
+                                 "w": (max(xs) - min(xs)) / SCALE, "h": (max(ys) - min(ys)) / SCALE})
+                if top + h >= im.height:
+                    break
+                top += tile - overlap
+        return rows
+
+    async with _rapid["lock"]:
+        return await asyncio.wait_for(asyncio.to_thread(read_tiles), timeout=600)
 
 
 async def run_tesseract(png_path):
@@ -323,6 +364,24 @@ async def check_brand(context, sem, brand, shots_dir):
         }
 
 
+async def open_browser(pw, extra_args=()):
+    """Google Chrome where available (Mac, GitHub runners); Playwright's Chromium otherwise.
+
+    HEADED=1 runs a visible window (on servers, inside a virtual screen via xvfb-run),
+    which bot filters flag less often than headless browsers.
+    """
+    channel = os.environ.get("BROWSER_CHANNEL") or ("chrome" if sys.platform == "darwin" else None)
+    headless = os.environ.get("HEADED") != "1"
+    browser = await pw.chromium.launch(channel=channel, headless=headless,
+                                       args=["--disable-blink-features=AutomationControlled", *extra_args])
+    context = await browser.new_context(user_agent=UA, locale="en-IN", timezone_id="Asia/Kolkata",
+                                        viewport={"width": 1366, "height": 900},
+                                        device_scale_factor=SCALE,
+                                        extra_http_headers={"Accept-Language": "en-IN,en;q=0.9"})
+    await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    return browser, context
+
+
 async def read_bonanza(context):
     page = await context.new_page()
     try:
@@ -355,13 +414,7 @@ async def main(only=None, recheck=False, from_mac=False):
         return
 
     async with async_playwright() as pw:
-        # Google Chrome on a Mac; Playwright's bundled Chromium on servers
-        browser = await pw.chromium.launch(channel="chrome" if sys.platform == "darwin" else None, headless=True,
-                                           args=["--disable-blink-features=AutomationControlled"])
-        context = await browser.new_context(user_agent=UA, locale="en-IN", timezone_id="Asia/Kolkata",
-                                            viewport={"width": 1366, "height": 900},
-                                            device_scale_factor=SCALE)
-        await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        browser, context = await open_browser(pw)
 
         print("Reading Festive Bonanza page...", flush=True)
         try:
@@ -396,13 +449,20 @@ async def main(only=None, recheck=False, from_mac=False):
         results = await asyncio.gather(*(check_brand(context, sem, live[n]["brand"], shots_dir) for n in todo))
         checked = dict(zip(todo, results))
         # Pages often fail only because several load at once; retry those one at a time.
-        retry = [n for n in todo if checked[n]["status"] == "error" and "blocked" not in checked[n]["error"]]
+        await browser.close()
+        # Pages often fail only because several load at once, or because a bot filter dislikes
+        # this browser's HTTP/2 fingerprint. Retry every failure one at a time in a fresh
+        # browser with HTTP/2 switched off.
+        retry = [n for n in todo if checked[n]["status"] == "error"]
         if retry:
-            print(f"Retrying {len(retry)} brands one at a time...", flush=True)
+            print(f"Retrying {len(retry)} brands one at a time with HTTP/2 off...", flush=True)
+            browser, context = await open_browser(pw, extra_args=["--disable-http2"])
             one = asyncio.Semaphore(1)
             for n in retry:
-                checked[n] = await check_brand(context, one, live[n]["brand"], shots_dir)
-        await browser.close()
+                again = await check_brand(context, one, live[n]["brand"], shots_dir)
+                if again["status"] != "error":
+                    checked[n] = again
+            await browser.close()
 
     brands = []
     for n in names:
