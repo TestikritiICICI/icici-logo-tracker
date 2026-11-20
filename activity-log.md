@@ -119,3 +119,11 @@ Dated record of every activity on this project. Newest entries at the bottom.
 - Run 3 (manual, 9:36 AM IST) succeeded in 11 minutes and Render redeployed: https://icici-logo-tracker.onrender.com now shows November 20.
 - Result: 6 ICICI logo shown, 2 text only, 13 other banks only, 51 no bank shown, 22 could not be checked, 8 website needed.
 - Limitation: GitHub's servers are outside India, and 22 sites blocked them (HTTP 403 or HTTP/2 errors), including Croma, Pepperfry, Nespresso, Yatra, Reliance Digital, LG, Xiaomi, Zomato and MakeMyTrip. From the Mac (Indian internet) only 6 failed on November 19. Logo counts from the server are therefore lower and not directly comparable with the Mac runs.
+
+### 20. Mac fills the gaps (GitHub plus Mac)
+- The user chose to keep GitHub's daily 9:00 AM run and have the Mac improve it when it is on.
+- `scripts/mac_fill_gaps.sh`: waits for any GitHub run in progress, pulls GitHub's results and the screenshots from the `site` branch, checks every brand from the Mac, retries failures, rebuilds the site, pushes results to `main` and publishes the `site` branch.
+- Merge rules in `scripts/daily_check.py`: the Mac's results replace the server's for that day; a brand the Mac cannot load keeps the earlier result (shown on the site as "result from earlier run"); the GitHub run never overwrites a day the Mac has already checked. Each day records `run_by` ("Mac in India" or "GitHub server").
+- Why a full Mac check, not just the blocked brands: the server's Tesseract OCR missed ICICI logos inside banners that the Mac reads (Amazon, Sleepyhead and Croma all showed the logo from the Mac on November 20 but not from the server).
+- November 20 after the Mac check: 14 ICICI logo shown, 2 text only, 16 other banks only, 58 no bank shown, 4 could not be checked (Ajio, Goibibo, MakeMyTrip, WearKatha), 8 website needed. Live on https://icici-logo-tracker.onrender.com.
+- Mac scheduled task "ICICI logo tracker: Mac fills the gaps" (ID `icici-logo-daily-tracker`) now runs `scripts/mac_fill_gaps.sh` daily at about 10:30 AM IST while the Claude app is open. On days the Mac is off, the site shows GitHub's results.
