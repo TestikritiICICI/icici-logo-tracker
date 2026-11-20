@@ -332,7 +332,7 @@ async def read_bonanza(context):
         await page.close()
 
 
-async def main(only=None, recheck=False):
+async def main(only=None, recheck=False, from_mac=False):
     now = datetime.now(IST)
     day = now.strftime("%Y-%m-%d")
     out_dir = ROOT / "data/daily" / day
@@ -421,6 +421,9 @@ async def main(only=None, recheck=False):
         # Merge the rechecked brands into today's full results
         full = json.loads(out_path.read_text())
         fresh = {b["name"]: b for b in brands}
+        if from_mac:
+            for b in fresh.values():
+                b["rechecked_from"] = "Mac in India"
         full["brands"] = [fresh.get(b["name"], b) for b in full["brands"]]
         full["counts"] = {}
         for b in full["brands"]:
@@ -437,7 +440,9 @@ if __name__ == "__main__":
     ap.add_argument("--only", help="Comma-separated brand names for a quick test run")
     ap.add_argument("--recheck", action="store_true",
                     help="With --only: merge the rechecked brands into today's results.json")
+    ap.add_argument("--from-mac", action="store_true",
+                    help="With --recheck: label the rechecked brands as checked from the Mac in India")
     args = ap.parse_args()
     only = {s.strip().lower() for s in args.only.split(",")} if args.only else None
-    asyncio.run(main(only, args.recheck))
+    asyncio.run(main(only, args.recheck, args.from_mac))
     sys.exit(0)
