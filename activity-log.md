@@ -111,3 +111,11 @@ Dated record of every activity on this project. Newest entries at the bottom.
 - Changes for servers: OCR falls back to Tesseract when not on a Mac; Chromium is used instead of Google Chrome; ICICI logos are bundled in `assets/`; screenshots are kept on the site for the last 30 days (results are kept for all days).
 - Screenshots are not stored in `main`; each run restores the last 30 days of screenshots from the `site` branch.
 - The Mac scheduled task (`icici-logo-daily-tracker-2`) is now a duplicate of the GitHub run.
+
+## November 20, 2026
+
+### 19. First successful automatic run on GitHub Actions
+- Runs 1 and 2 (November 19) failed: GitHub's newest Ubuntu (26.04) is not supported by Playwright 1.55, so the workflow now pins `ubuntu-24.04`; Tesseract timed out on full-length pages and an empty error message crashed the run. Fixed: Tesseract reads only the top 3,500 px of each page, OCR failures no longer stop a page, and error notes are built safely.
+- Run 3 (manual, 9:36 AM IST) succeeded in 11 minutes and Render redeployed: https://icici-logo-tracker.onrender.com now shows November 20.
+- Result: 6 ICICI logo shown, 2 text only, 13 other banks only, 51 no bank shown, 22 could not be checked, 8 website needed.
+- Limitation: GitHub's servers are outside India, and 22 sites blocked them (HTTP 403 or HTTP/2 errors), including Croma, Pepperfry, Nespresso, Yatra, Reliance Digital, LG, Xiaomi, Zomato and MakeMyTrip. From the Mac (Indian internet) only 6 failed on November 19. Logo counts from the server are therefore lower and not directly comparable with the Mac runs.
