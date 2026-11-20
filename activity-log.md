@@ -102,3 +102,12 @@ Dated record of every activity on this project. Newest entries at the bottom.
 - Changes since November 17: Akbar Travels (ICICI logo → other banks only), Nilkamal Furniture (ICICI logo → no bank shown), Reliance Digital (text only → no bank shown), HP (other banks only → no bank shown), Anvayaa (no bank shown → other banks only).
 - Could not be checked: Ajio and Fitelo (HTTP 403), MakeMyTrip and Goibibo (HTTP/2 error), Nomad and WearKatha (did not load). Same group as November 17.
 - Site and `deliverables/icici-logo-tracker-site.zip` rebuilt with October 28, November 6, 17 and 19. Upload to Netlify to update the live site.
+
+### 18. Public website on Render, daily run on GitHub Actions
+- Public link: https://icici-logo-tracker.onrender.com (Render free static site `icici-logo-tracker`, workspace iKriti). Hidden from search engines (noindex), but open to anyone with the link.
+- Code and data: https://github.com/TestikritiICICI/icici-logo-tracker (public repo).
+- `.github/workflows/daily-check.yml` runs every day at 03:30 UTC (9:00 AM IST) on GitHub's servers, with no Mac or person needed. It runs the check with Chromium and Tesseract OCR, saves `results.json` to `main`, rebuilds the website and force-pushes it to the `site` branch. Render redeploys automatically on each push to `site`. A "Run workflow" button on the Actions tab starts a run by hand.
+- The workflow file is written as one-line JSON (valid YAML) because it was added through the GitHub web editor; the Mac's saved GitHub login cannot push workflow files.
+- Changes for servers: OCR falls back to Tesseract when not on a Mac; Chromium is used instead of Google Chrome; ICICI logos are bundled in `assets/`; screenshots are kept on the site for the last 30 days (results are kept for all days).
+- Screenshots are not stored in `main`; each run restores the last 30 days of screenshots from the `site` branch.
+- The Mac scheduled task (`icici-logo-daily-tracker-2`) is now a duplicate of the GitHub run.

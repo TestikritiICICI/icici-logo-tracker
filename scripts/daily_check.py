@@ -13,6 +13,7 @@ Run: python3 scripts/daily_check.py            (today, IST)
 import argparse
 import asyncio
 import json
+import os
 import re
 import sys
 from datetime import datetime, timedelta, timezone
@@ -28,6 +29,7 @@ CONCURRENCY = 4
 SCALE = 2                 # capture at 2x so OCR can read small logo text
 MAX_CAPTURE = 5000        # CSS px of page height captured for OCR
 OCR_BIN = ROOT / "scripts/bin/ocr"
+TESSERACT_MAX_HEIGHT = 3500  # CSS px read by Tesseract on servers
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36")
 
@@ -181,9 +183,20 @@ async def run_ocr(png_path):
 
 async def run_tesseract(png_path):
     """Tesseract word boxes grouped into lines, in the same shape as the Vision output."""
-    proc = await asyncio.create_subprocess_exec("tesseract", str(png_path), "stdout", "--psm", "11", "tsv",
-                                                stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.DEVNULL)
-    out, _ = await asyncio.wait_for(proc.communicate(), timeout=180)
+    # Tesseract is much slower than Vision, so read only the top of the page (where offer banners sit)
+    top_path = png_path.with_suffix(".top.png")
+    with Image.open(png_path) as im:
+        im.crop((0, 0, im.width, min(im.height, TESSERACT_MAX_HEIGHT * SCALE))).save(top_path)
+    proc = await asyncio.create_subprocess_exec("tesseract", str(top_path), "stdout", "--psm", "11", "tsv",
+                                                stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.DEVNULL,
+                                                env={**os.environ, "OMP_THREAD_LIMIT": "1"})
+    try:
+        out, _ = await asyncio.wait_for(proc.communicate(), timeout=300)
+    except asyncio.TimeoutError:
+        proc.kill()
+        raise
+    finally:
+        top_path.unlink(missing_ok=True)
     lines = {}
     for row in out.decode("utf-8", "ignore").splitlines()[1:]:
         f = row.split("\t")
@@ -241,7 +254,11 @@ async def check_url(context, url, shot_path):
         else:
             res["ok"] = True
             logos, icici_text, rivals = classify_page(data)
-            ocr = await run_ocr(png_path)
+            try:
+                ocr = await run_ocr(png_path)
+            except Exception as ex:  # OCR is one signal of several; carry on without it
+                print(f"    OCR skipped for {url}: {type(ex).__name__}", flush=True)
+                ocr = []
             text_rects = await page.evaluate(ICICI_TEXT_RECTS_JS)
             # ICICI read from pixels where the page has no ICICI text = ICICI inside an image (logo or banner)
             image_hits = [r for r in ocr if is_icici_bank(r["t"].lower())
@@ -258,7 +275,8 @@ async def check_url(context, url, shot_path):
             save_evidence(png_path, shot_path, focus)
         res["screenshot"] = shot_path.name
     except Exception as ex:
-        res["error"] = f"Could not open page: {type(ex).__name__}: {str(ex).splitlines()[0][:120]}"
+        detail = (str(ex).strip().splitlines() or [""])[0][:120]
+        res["error"] = f"Could not open page: {type(ex).__name__}" + (f": {detail}" if detail else "")
     finally:
         await page.close()
         png_path.unlink(missing_ok=True)

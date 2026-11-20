@@ -2,6 +2,8 @@
 
 Checks whether partner brands with live ICICI Bank Festive Bonanza credit card offers show the ICICI Bank logo on their own websites. Runs as a daily tracker across every Bonanza brand, with a calendar website.
 
+**Live site:** https://icici-logo-tracker.onrender.com · updated every day at 9:00 AM IST by GitHub Actions (`.github/workflows/daily-check.yml`), hosted on Render from the `site` branch.
+
 | Folder / file | What's in it |
 |---|---|
 | `activity-log.md` | Dated log of every activity on this project |
@@ -13,4 +15,7 @@ Checks whether partner brands with live ICICI Bank Festive Bonanza credit card o
 | `screenshots/deck-preview/` | Rendered slides from the PPTX |
 | `scripts/` | `daily_check.py` runs the daily check; `build_site.py` builds the website and zip; `build_deck.py` regenerates the deck; `ocr.swift` reads text inside images |
 | `downloads/` | Any files downloaded for this project |
-| `site/` | Website built by `scripts/build_site.py` (daily tracker calendar plus baseline audit) |
+| `site/` | Website built by `scripts/build_site.py` (daily tracker calendar plus baseline audit); published to the `site` branch |
+| `.github/workflows/` | Daily 9:00 AM IST run on GitHub Actions |
+| `render.yaml` | Render static site settings (serves the `site` branch) |
+| `assets/` | ICICI Bank logo and i-Man mark used by the website |
