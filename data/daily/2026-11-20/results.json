@@ -4,12 +4,12 @@
  "bonanza_page_read": true,
  "offers_on_bonanza": 142,
  "counts": {
-  "none": 51,
-  "error": 22,
-  "rival": 13,
+  "none": 61,
+  "rival": 17,
+  "error": 5,
   "text": 2,
   "nourl": 8,
-  "logo": 6
+  "logo": 9
  },
  "new_brands": [],
  "brands": [
@@ -39,19 +39,20 @@
    "offers": [
     "5% off up to ₹10,000 on a minimum purchase of ₹60,000 Offer Validity: Oct 08 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://store.acer.com/en-in/",
-   "final_url": null,
-   "page_title": null,
+   "final_url": "https://store.acer.com/en-in/",
+   "page_title": "Acer India Official Store | Laptops, PCs, Tablets, Monitors & more!",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://store.acer.com/en-in/",
+   "screenshot": "acer.jpg",
+   "error": "",
    "pages_checked": [
     "https://store.acer.com/en-in/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Air India",
@@ -60,19 +61,23 @@
     "Domestic Flights 10% off up to ₹1,500 on a minimum purchase of ₹6,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
     "International Flights 10% off up to ₹8,000 on a minimum purchase of ₹25,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
    ],
-   "status": "error",
+   "status": "rival",
    "url": "https://www.airindia.com/",
-   "final_url": null,
-   "page_title": null,
+   "final_url": "https://www.airindia.com/",
+   "page_title": "Air India: Book Domestic & International Non-Stop Direct Flights",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
-   "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.airindia.com/",
+   "rivals": [
+    "Amex",
+    "HDFC"
+   ],
+   "screenshot": "airindia.jpg",
+   "error": "",
    "pages_checked": [
     "https://www.airindia.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Ajio",
@@ -93,7 +98,8 @@
    "error": "Page blocked or did not load (HTTP 403)",
    "pages_checked": [
     "https://www.ajio.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Akbar Travels",
@@ -259,19 +265,22 @@
    "offers": [
     "Up to ₹1,000 off on select categories/items on orders via Blinkit App Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Cards and Credit Card EMIsAvail Offer"
    ],
-   "status": "error",
+   "status": "rival",
    "url": "https://blinkit.com/",
    "final_url": "https://blinkit.com/",
-   "page_title": "Just a moment...",
+   "page_title": "30,000+ products delivered to your doorstep | Blinkit",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "SBI"
+   ],
    "screenshot": "blinkit.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://blinkit.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Blue Star",
@@ -279,19 +288,20 @@
    "offers": [
     "Up to ₹4,000 off on Air conditioners Offer Validity: Oct 10 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://www.bluestarindia.com/",
-   "final_url": null,
-   "page_title": null,
+   "final_url": "https://www.bluestarindia.com/",
+   "page_title": "Blue Star Limited: HVAC, Air Conditioning and Refrigeration Since 1943",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_TIMED_OUT at https://www.bluestarindia.com/",
+   "screenshot": "bluestar.jpg",
+   "error": "",
    "pages_checked": [
     "https://www.bluestarindia.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Bonito Designs",
@@ -475,16 +485,17 @@
    "status": "error",
    "url": "https://www.croma.com/",
    "final_url": "https://www.croma.com/",
-   "page_title": "Access Denied",
+   "page_title": "Croma Electronics | Online Electronics Shopping | Buy Electronics Online",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "croma.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "Page blocked or did not load (HTTP 200)",
    "pages_checked": [
     "https://www.croma.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Cuminco",
@@ -552,19 +563,23 @@
    "offers": [
     "Up to ₹1,500 off on shopping Use Code: ICICISHOPEMI; ICICIAPAYSHOPEMI Offer Validity: Jul 13, 2026 to Mar 31, 2027 Valid on Credit Card EMIsAvail Offer"
    ],
-   "status": "error",
+   "status": "rival",
    "url": "https://www.district.in/",
    "final_url": "https://www.district.in/",
-   "page_title": "Access Denied",
+   "page_title": "District by Zomato: Movies, Events, Dining, Sports & Concerts Nearby",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "HSBC",
+    "SBI"
+   ],
    "screenshot": "district.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://www.district.in/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "DocOnline",
@@ -797,7 +812,8 @@
    "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.goibibo.com/",
    "pages_checked": [
     "https://www.goibibo.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Google Store",
@@ -991,19 +1007,20 @@
    "offers": [
     "Additional up to 30% off on a minimum purchase of ₹3,00,000. Valid on modular interiors. Offer Validity: Sep 11, 2026 to Mar 09, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://interiorcompany.com/",
-   "final_url": "https://interiorcompany.com/",
-   "page_title": "Access Denied",
+   "final_url": "https://www.interiorcompany.com/",
+   "page_title": "Interior Company: Best Interior Designers Company in India",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "interiorcompany.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://interiorcompany.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "JBL",
@@ -1011,19 +1028,20 @@
    "offers": [
     "Up to 15% off up to ₹10,000 Offer Validity: Sep 01 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://in.jbl.com/",
    "final_url": "https://in.jbl.com/",
-   "page_title": "jbl.com",
+   "page_title": "Official JBL Store - Speakers, Headphones, and More!",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "jbl.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://in.jbl.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Justa Hotels",
@@ -1071,19 +1089,20 @@
    "offers": [
     "10% off up to ₹250 on a minimum purchase of ₹999 Use Code: ICICIHAZEL Offer Validity: Sep 09, 2026 to Sep 08, 2027 Valid on Credit & Debit CardsAvail Offer"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://kitchenore.com/",
    "final_url": "https://kitchenore.com/",
-   "page_title": "ERROR: The request could not be satisfied",
+   "page_title": "KitchenOre: Premium Durable Cookware & Kitchenware Products Online",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "kitchenore.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://kitchenore.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "LG",
@@ -1091,19 +1110,20 @@
    "offers": [
     "Up to 26% off up to ₹30,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://www.lg.com/in/",
    "final_url": "https://www.lg.com/in/",
-   "page_title": "Access Denied",
+   "page_title": "Consumer & Home Electronics from LG | LG India",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "lg.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://www.lg.com/in/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "LifeCell",
@@ -1188,7 +1208,8 @@
    "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.makemytrip.com/",
    "pages_checked": [
     "https://www.makemytrip.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "MeraDoc",
@@ -1256,19 +1277,20 @@
    "offers": [
     "5% off up to ₹1,500 on a minimum purchase of ₹15,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store Avail Offer"
    ],
-   "status": "error",
+   "status": "logo",
    "url": "https://www.nespresso.com/in/en/",
-   "final_url": null,
-   "page_title": null,
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "final_url": "https://www.nespresso.com/in/en/",
+   "page_title": "Nespresso India - Coffee Capsules, Espresso Machines, Accessories | Nespresso™ India",
+   "icici_logo": "https://www.nespresso.com/in/media/wysiwyg/ICICI_offer_banner_430x134.jpeg https://www.nespresso.com/in/media/wysiwyg/ICICI_offer_banner_430x134.jpeg img",
+   "icici_logo_count": 4,
    "icici_text": "",
    "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.nespresso.com/in/en/",
+   "screenshot": "nespresso.jpg",
+   "error": "",
    "pages_checked": [
     "https://www.nespresso.com/in/en/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Nilkamal Furniture",
@@ -1461,19 +1483,26 @@
    "offers": [
     "10% off up to ₹4,000 on a minimum purchase of ₹10,000 Use Code: ICICIEMI10 Offer Validity: Oct 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Avail Offer"
    ],
-   "status": "error",
+   "status": "logo",
    "url": "https://www.pepperfry.com/",
    "final_url": "https://www.pepperfry.com/",
-   "page_title": "Access Denied",
-   "icici_logo": "",
-   "icici_logo_count": 0,
+   "page_title": "Best Furniture & Home Decor Online in India - Up to 70% Off | Pepperfry",
+   "icici_logo": "In image (read by OCR): PICICI Bank",
+   "icici_logo_count": 1,
    "icici_text": "",
-   "rivals": [],
+   "rivals": [
+    "Axis",
+    "HDFC",
+    "HSBC",
+    "IDFC FIRST",
+    "Kotak"
+   ],
    "screenshot": "pepperfry.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://www.pepperfry.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Philips",
@@ -1544,19 +1573,20 @@
     "20% off on a minimum purchase of ₹699 Offer Validity: Jan 05 to Dec 31, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer",
     "Up to 20% off up to ₹300 on a minimum purchase of ₹1,249 Offer Validity: Jul 14 to Nov 30, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://redcliffelabs.com/",
    "final_url": "https://redcliffelabs.com/",
-   "page_title": "Just a moment...",
+   "page_title": "Redcliffe Labs, a Leading Diagnostic Centre in India",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "redcliffelabs.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://redcliffelabs.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Reliance Digital",
@@ -1564,19 +1594,20 @@
    "offers": [
     "5% off up to ₹12,500 on a minimum purchase of ₹10,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://www.reliancedigital.in/",
    "final_url": "https://www.reliancedigital.in/",
-   "page_title": "Access Denied",
+   "page_title": "Online Electronic Shopping Store in India | Best Electronic Store",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "reliancedigital.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://www.reliancedigital.in/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Samsung",
@@ -1975,7 +2006,8 @@
    "error": "Page blocked or did not load (HTTP 200)",
    "pages_checked": [
     "https://wearkatha.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Xiaomi",
@@ -1983,19 +2015,20 @@
    "offers": [
     "Up to ₹10,000 off on Xiaomi smartphones, TVs and tablets Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://www.mi.com/in/",
    "final_url": "https://www.mi.com/in/",
-   "page_title": "Access Denied",
+   "page_title": "Xiaomi India | Smartphone | Tablet | TV",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "xiaomi.jpg",
-   "error": "Page blocked or did not load (HTTP 403)",
+   "error": "",
    "pages_checked": [
     "https://www.mi.com/in/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Yatra",
@@ -2004,19 +2037,25 @@
     "Domestic Flights 12% off up to ₹2,000 on a minimum purchase of ₹5,000 Use Code: YTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
     "International Flights 10% off up to ₹7,000 on a minimum purchase of ₹15,000 Use Code: YTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
    ],
-   "status": "error",
+   "status": "logo",
    "url": "https://www.yatra.com/",
-   "final_url": null,
-   "page_title": null,
-   "icici_logo": "",
-   "icici_logo_count": 0,
-   "icici_text": "",
-   "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.yatra.com/",
+   "final_url": "https://www.yatra.com/",
+   "page_title": "Yatra.com – Best Travel Website. Book Flights, Hotels, Trains, Holidays & Bus Tickets",
+   "icici_logo": "In image (read by OCR): VICICI Bank",
+   "icici_logo_count": 1,
+   "icici_text": "*Offer applicable on ICICI Bank Credit Card EMI transactions only...",
+   "rivals": [
+    "Amex",
+    "Axis",
+    "HDFC",
+    "RBL"
+   ],
+   "screenshot": "yatra.jpg",
+   "error": "",
    "pages_checked": [
     "https://www.yatra.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Zepto",
@@ -2024,19 +2063,20 @@
    "offers": [
     "5% off up to ₹4,000 on a minimum purchase of ₹3,000 Offer Validity: Oct 03 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
    ],
-   "status": "error",
+   "status": "none",
    "url": "https://www.zeptonow.com/",
-   "final_url": "https://www.zeptonow.com/",
-   "page_title": "ERROR: The request could not be satisfied",
+   "final_url": "https://www.zepto.com/",
+   "page_title": "Zepto: Online Grocery Delivery App - Groceries in Minutes",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
    "rivals": [],
    "screenshot": "zepto.jpg",
-   "error": "Page blocked or did not load (HTTP 202)",
+   "error": "",
    "pages_checked": [
     "https://www.zeptonow.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "Zomato",
@@ -2044,19 +2084,22 @@
    "offers": [
     "Additional 5% off on a minimum order value of ₹299 on food delivery orders Offer Validity: Nov 03 to Nov 30, 2026 Valid on Amazon Pay ICICI Bank Credit CardsAvail Offer"
    ],
-   "status": "error",
+   "status": "rival",
    "url": "https://www.zomato.com/",
-   "final_url": null,
-   "page_title": null,
+   "final_url": "https://www.zomato.com/",
+   "page_title": "Zomato",
    "icici_logo": "",
    "icici_logo_count": 0,
    "icici_text": "",
-   "rivals": [],
-   "screenshot": null,
-   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.zomato.com/",
+   "rivals": [
+    "SBI"
+   ],
+   "screenshot": "zomato.jpg",
+   "error": "",
    "pages_checked": [
     "https://www.zomato.com/"
-   ]
+   ],
+   "rechecked_from": "Mac in India"
   },
   {
    "name": "ixigo",
