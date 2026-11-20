@@ -30,6 +30,8 @@ SCALE = 2                 # capture at 2x so OCR can read small logo text
 MAX_CAPTURE = 5000        # CSS px of page height captured for OCR
 OCR_BIN = ROOT / "scripts/bin/ocr"
 TESSERACT_MAX_HEIGHT = 3500  # CSS px read by Tesseract on servers
+MAC_LABEL = "Mac in India"
+SERVER_LABEL = "GitHub server"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36")
 
@@ -344,6 +346,13 @@ async def main(only=None, recheck=False, from_mac=False):
         for a in b["aliases"] + [b["name"]]:
             by_alias[norm(a)] = b
     ignore = {norm(x) for x in cfg["ignore"]}
+    on_mac = sys.platform == "darwin"
+    existing_path = out_dir / "results.json"
+    existing = json.loads(existing_path.read_text()) if existing_path.exists() else None
+    if not only and not on_mac and existing and existing.get("run_by") == MAC_LABEL:
+        # The Mac's check is more complete (Indian connection, better OCR); never overwrite it
+        print(f"Today's results already come from the {MAC_LABEL}; keeping them.", flush=True)
+        return
 
     async with async_playwright() as pw:
         # Google Chrome on a Mac; Playwright's bundled Chromium on servers
@@ -407,8 +416,20 @@ async def main(only=None, recheck=False, from_mac=False):
     counts = {}
     for b in brands:
         counts[b["status"]] = counts.get(b["status"], 0) + 1
+    if existing and not only:
+        # Never replace a brand that loaded earlier today with "could not check"
+        earlier = {b["name"]: b for b in existing["brands"]}
+        for i, b in enumerate(brands):
+            e = earlier.get(b["name"])
+            if b["status"] == "error" and e and e["status"] not in ("error", "nourl"):
+                brands[i] = {**e, "offers": b["offers"], "rechecked_from": None,
+                             "kept_from": existing.get("run_by") or "earlier run"}
+        counts = {}
+        for b in brands:
+            counts[b["status"]] = counts.get(b["status"], 0) + 1
     result = {
         "date": day,
+        "run_by": MAC_LABEL if on_mac else SERVER_LABEL,
         "checked_at": now.strftime("%B %-d, %Y, %-I:%M %p IST"),
         "bonanza_page_read": bonanza_ok,
         "offers_on_bonanza": len(offers),
@@ -423,7 +444,7 @@ async def main(only=None, recheck=False, from_mac=False):
         fresh = {b["name"]: b for b in brands}
         if from_mac:
             for b in fresh.values():
-                b["rechecked_from"] = "Mac in India"
+                b["rechecked_from"] = MAC_LABEL
         full["brands"] = [fresh.get(b["name"], b) for b in full["brands"]]
         full["counts"] = {}
         for b in full["brands"]:

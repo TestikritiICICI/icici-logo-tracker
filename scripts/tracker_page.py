@@ -172,7 +172,7 @@ footer img { height:36px; }
     </aside>
     <section class="card day" id="day"><p class="empty">Loading...</p></section>
   </div>
-  <p class="note">The check runs every day at 9:00 AM IST on GitHub's servers. Some Indian sites block those servers, so a Mac in India then rechecks those brands; they are marked "Rechecked from Mac in India".</p>
+  <p class="note">The check runs every day at 9:00 AM IST on GitHub's servers. When the Mac in India is on, it then checks every brand again (Indian sites load more reliably from India, and its text recognition reads logos inside banners better) and its results replace the server's for that day.</p>
   <p class="note">How it works: each brand's homepage is opened in Google Chrome, scrolled, and checked for "ICICI" in image names and alt text, in page text, and inside images using text recognition. "Other banks only" means other banks appear but ICICI does not. Checkout pages and mobile apps are not covered.</p>
 </main>
 
@@ -283,7 +283,7 @@ function rowHtml(b) {
   const shot = b.screenshot ? `<a class="thumb" href="${esc(b.screenshot)}" data-cap="${esc(b.name)}"><img src="${esc(b.screenshot)}" alt="${esc(b.name)} screenshot" loading="lazy"></a>` : "";
   const site = b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">Open site</a>` : "";
   return `<tr data-s="${b.status}" data-q="${esc((b.name + " " + b.category).toLowerCase())}">
-    <td><div class="bn">${esc(b.name)}</div><div class="cat">${esc(b.category)}</div>${b.rechecked_from ? `<div class="cat">Rechecked from ${esc(b.rechecked_from)}</div>` : ""}${site}</td>
+    <td><div class="bn">${esc(b.name)}</div><div class="cat">${esc(b.category)}</div>${b.rechecked_from ? `<div class="cat">Rechecked from ${esc(b.rechecked_from)}</div>` : ""}${b.kept_from ? `<div class="cat">Could not load this run; result from ${esc(b.kept_from)}</div>` : ""}${site}</td>
     <td><span class="tag ${b.status}">${STATUS[b.status][0]}</span><div class="ev">${ev}</div>${offers}</td>
     <td>${(b.rivals || []).map(esc).join(", ") || '<span class="cat">None seen</span>'}</td>
     <td>${shot}</td></tr>`;
@@ -297,7 +297,7 @@ function renderDay(day, prev) {
   const warn = day.bonanza_page_read === false ? `<p class="changes">The Festive Bonanza page could not be read this day, so the full brand list was checked instead.</p>` : "";
   document.getElementById("day").innerHTML = `
     <h2>${fmt(day.date)}</h2>
-    <p class="sub">${c.logo || 0} of ${day.brands.length} brands showed the ICICI logo · checked ${esc(day.checked_at)}</p>
+    <p class="sub">${c.logo || 0} of ${day.brands.length} brands showed the ICICI logo · checked ${esc(day.checked_at)}${day.run_by ? " from the " + esc(day.run_by) : ""}</p>
     ${warn}
     <div class="stats">${stats}</div>
     ${changesHtml(day, prev)}

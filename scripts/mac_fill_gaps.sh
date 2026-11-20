@@ -2,10 +2,11 @@
 # Mac gap-filler for the daily ICICI logo tracker.
 #
 # GitHub Actions runs the full check every day at 9:00 AM IST, but many Indian
-# sites block GitHub's (non-Indian) servers. This script, run on the Mac on an
-# Indian connection, rechecks only the brands GitHub could not check, then
-# publishes the corrected results to the live site (Render redeploys from the
-# "site" branch). If GitHub has no results for today, it runs the full check.
+# sites block GitHub's (non-Indian) servers and its OCR misses some banner logos.
+# This script, run on the Mac on an Indian connection, checks every brand again;
+# its results replace GitHub's for the day (a brand the Mac cannot load keeps
+# GitHub's result). It then publishes to the live site (Render redeploys from
+# the "site" branch).
 #
 # Run: bash scripts/mac_fill_gaps.sh
 set -euo pipefail
@@ -35,22 +36,18 @@ for d in prev/shots/*/; do
 done
 git worktree remove --force prev
 
-# 3. Recheck the brands GitHub could not check (or run everything if GitHub has no results today)
+# 3. Check every brand from the Mac. Its results replace GitHub's for today; a brand the Mac
+#    cannot load keeps GitHub's result (daily_check.py handles that merge).
 RESULTS="data/daily/$TODAY/results.json"
-if [ -f "$RESULTS" ]; then
-  BLOCKED=$(python3 -c "
+[ -f "$RESULTS" ] && echo "GitHub results found for $TODAY; checking every brand again from the Mac."
+python3 scripts/daily_check.py
+BLOCKED=$(python3 -c "
 import json
 d = json.load(open('$RESULTS'))
 print(','.join(b['name'] for b in d['brands'] if b['status'] == 'error'))")
-  if [ -n "$BLOCKED" ]; then
-    echo "Rechecking from the Mac: $BLOCKED"
-    python3 scripts/daily_check.py --only "$BLOCKED" --recheck --from-mac
-  else
-    echo "GitHub checked every brand today; nothing to fill."
-  fi
-else
-  echo "No GitHub results for $TODAY; running the full check on the Mac."
-  python3 scripts/daily_check.py
+if [ -n "$BLOCKED" ]; then
+  echo "Retrying from the Mac: $BLOCKED"
+  python3 scripts/daily_check.py --only "$BLOCKED" --recheck --from-mac
 fi
 
 # 4. Rebuild the website, save results to main, publish the site branch
@@ -59,14 +56,14 @@ python3 scripts/build_site.py
 git add data/daily data/brands.json
 if ! git diff --cached --quiet; then
   git -c user.name="TestikritiICICI" -c user.email="TestikritiICICI@users.noreply.github.com" \
-    commit -q -m "Mac recheck of blocked brands $TODAY"
+    commit -q -m "Mac check $TODAY"
   git push -q origin HEAD:main
 fi
 export GIT_INDEX_FILE="$(mktemp -d)/site-index"
 git --work-tree=site add -A
 tree=$(git write-tree)
 commit=$(git -c user.name="TestikritiICICI" -c user.email="TestikritiICICI@users.noreply.github.com" \
-  commit-tree "$tree" -m "Website for $TODAY (with Mac recheck)")
+  commit-tree "$tree" -m "Website for $TODAY (Mac check)")
 git push -q -f origin "${commit}:refs/heads/site"
 unset GIT_INDEX_FILE
 python3 -c "
