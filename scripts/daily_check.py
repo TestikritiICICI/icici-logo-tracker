@@ -408,6 +408,9 @@ async def main(only=None, recheck=False, from_mac=False):
     on_mac = sys.platform == "darwin"
     existing_path = out_dir / "results.json"
     existing = json.loads(existing_path.read_text()) if existing_path.exists() else None
+    server_test = os.environ.get("SERVER_TEST") == "true"  # manual test run: save separately, change nothing
+    if server_test:
+        existing = None
     if not only and not on_mac and existing and existing.get("run_by") == MAC_LABEL:
         # The Mac's check is more complete (Indian connection, better OCR); never overwrite it
         print(f"Today's results already come from the {MAC_LABEL}; keeping them.", flush=True)
@@ -512,6 +515,8 @@ async def main(only=None, recheck=False, from_mac=False):
         result, counts = full, full["counts"]
     elif only:
         out_path = out_dir / "results-test.json"
+    elif server_test:
+        out_path = out_dir / "results-server-test.json"
     out_path.write_text(json.dumps(result, indent=1, ensure_ascii=False))
     print(f"Saved {out_path.relative_to(ROOT)}: {counts}", flush=True)
 
