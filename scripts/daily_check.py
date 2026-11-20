@@ -31,6 +31,9 @@ MAX_CAPTURE = 5000        # CSS px of page height captured for OCR
 OCR_BIN = ROOT / "scripts/bin/ocr"
 TESSERACT_MAX_HEIGHT = 3500  # CSS px read by Tesseract on servers
 MAC_LABEL = "Mac in India"
+PAGE_TIMEOUT = 180            # seconds per page, everything included
+RUN_MINUTES = int(os.environ.get("RUN_MINUTES", "0" if sys.platform == "darwin" else "120"))
+DEADLINE = None               # set at start: no new pages after this, so the run always finishes and publishes
 SERVER_LABEL = "GitHub server"
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36")
@@ -204,7 +207,9 @@ async def run_rapidocr(png_path):
     def read_tiles():
         rows = []
         with Image.open(png_path) as im:
-            im = im.convert("RGB")
+            # Top of the page only (where offer banners sit), read at 1x to keep it to seconds per page
+            im = im.crop((0, 0, im.width, min(im.height, TESSERACT_MAX_HEIGHT * SCALE)))
+            im = im.convert("RGB").resize((im.width // SCALE, im.height // SCALE))
             tile, overlap = 1400, 150
             top = 0
             while top < im.height:
@@ -213,15 +218,15 @@ async def run_rapidocr(png_path):
                 result, _ = engine(np.asarray(crop))
                 for box, text, _score in result or []:
                     xs, ys = [p[0] for p in box], [p[1] for p in box]
-                    rows.append({"t": text, "x": min(xs) / SCALE, "y": (top + min(ys)) / SCALE,
-                                 "w": (max(xs) - min(xs)) / SCALE, "h": (max(ys) - min(ys)) / SCALE})
+                    rows.append({"t": text, "x": min(xs), "y": top + min(ys),
+                                 "w": max(xs) - min(xs), "h": max(ys) - min(ys)})
                 if top + h >= im.height:
                     break
                 top += tile - overlap
         return rows
 
     async with _rapid["lock"]:
-        return await asyncio.wait_for(asyncio.to_thread(read_tiles), timeout=600)
+        return await asyncio.wait_for(asyncio.to_thread(read_tiles), timeout=120)
 
 
 async def run_tesseract(png_path):
@@ -345,7 +350,14 @@ async def check_brand(context, sem, brand, shots_dir):
         pages = []
         for i, u in enumerate(urls):
             slug = norm(brand["name"]) + (f"-{i}" if i else "")
-            pages.append(await check_url(context, u, shots_dir / f"{slug}.jpg"))
+            if DEADLINE and datetime.now(IST) > DEADLINE:
+                pages.append({"url": u, "ok": False, "error": "Not checked: the day's time limit was reached"})
+                continue
+            try:
+                pages.append(await asyncio.wait_for(check_url(context, u, shots_dir / f"{slug}.jpg"),
+                                                    timeout=PAGE_TIMEOUT))
+            except asyncio.TimeoutError:
+                pages.append({"url": u, "ok": False, "error": "Could not open page: took longer than 3 minutes"})
         status = overall_status(pages)
         best = next((p for p in pages if p.get("icici_logos")), None) or next((p for p in pages if p.get("ok")), pages[0])
         print(f"  {brand['name']:<24} {status}", flush=True)
@@ -372,8 +384,13 @@ async def open_browser(pw, extra_args=()):
     """
     channel = os.environ.get("BROWSER_CHANNEL") or ("chrome" if sys.platform == "darwin" else None)
     headless = os.environ.get("HEADED") != "1"
-    browser = await pw.chromium.launch(channel=channel, headless=headless,
-                                       args=["--disable-blink-features=AutomationControlled", *extra_args])
+    args = ["--disable-blink-features=AutomationControlled", *extra_args]
+    try:
+        browser = await pw.chromium.launch(channel=channel, headless=headless, args=args, timeout=60000)
+    except Exception as ex:
+        print(f"Could not start {channel or 'Chromium'} ({'headless' if headless else 'headed'}): "
+              f"{type(ex).__name__}; using headless Chromium", flush=True)
+        browser = await pw.chromium.launch(headless=True, args=args, timeout=60000)
     context = await browser.new_context(user_agent=UA, locale="en-IN", timezone_id="Asia/Kolkata",
                                         viewport={"width": 1366, "height": 900},
                                         device_scale_factor=SCALE,
@@ -394,7 +411,9 @@ async def read_bonanza(context):
 
 
 async def main(only=None, recheck=False, from_mac=False):
+    global DEADLINE
     now = datetime.now(IST)
+    DEADLINE = now + timedelta(minutes=RUN_MINUTES) if RUN_MINUTES else None
     day = now.strftime("%Y-%m-%d")
     out_dir = ROOT / "data/daily" / day
     shots_dir = out_dir / "shots"
