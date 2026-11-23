@@ -1,0 +1,2156 @@
+{
+ "date": "2026-11-23",
+ "run_by": "GitHub server",
+ "checked_at": "November 23, 2026, 8:47 PM IST",
+ "bonanza_page_read": true,
+ "offers_on_bonanza": 147,
+ "counts": {
+  "none": 61,
+  "rival": 15,
+  "error": 9,
+  "text": 2,
+  "nourl": 11,
+  "logo": 8
+ },
+ "new_brands": [
+  "Caratlane",
+  "Inaya Accessories",
+  "flipkart"
+ ],
+ "brands": [
+  {
+   "name": "A.O. Smith",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹3,500 off on a minimum purchase of ₹10,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.aosmithindia.com/",
+   "final_url": "https://www.aosmithindia.com/",
+   "page_title": "A.O. Smith - Quality Geysers & Water Purifier Solutions for You",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "aosmith.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.aosmithindia.com/"
+   ]
+  },
+  {
+   "name": "Acer",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "5% off up to ₹10,000 on a minimum purchase of ₹60,000 Offer Validity: Oct 08 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://store.acer.com/en-in/",
+   "final_url": "https://store.acer.com/en-in/",
+   "page_title": "Acer India Official Store | Laptops, PCs, Tablets, Monitors & more!",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "acer.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://store.acer.com/en-in/"
+   ]
+  },
+  {
+   "name": "Air India",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights 10% off up to ₹1,500 on a minimum purchase of ₹6,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Flights 10% off up to ₹8,000 on a minimum purchase of ₹25,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.airindia.com/",
+   "final_url": "https://www.airindia.com/",
+   "page_title": "Air India: Book Domestic & International Non-Stop Direct Flights",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Amex",
+    "HDFC"
+   ],
+   "screenshot": "airindia.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.airindia.com/"
+   ]
+  },
+  {
+   "name": "Ajio",
+   "category": "Fashion and jewellery",
+   "offers": [
+    "10% off up to ₹1,000 on a minimum purchase of ₹3,000. Valid on 6 months & above EMIs Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "10% off up to ₹2,000 off on a minimum purchase of ₹10,000 Offer Validity: Sep 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://www.ajio.com/",
+   "final_url": "https://www.ajio.com/",
+   "page_title": "Access Denied",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "ajio.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://www.ajio.com/"
+   ]
+  },
+  {
+   "name": "Akbar Travels",
+   "category": "Travel",
+   "offers": [
+    "Domestic & International Flights ₹600 off on a minimum purchase of ₹5,000 Offer Validity: Sep 18 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "Domestic & International Hotels 12% off up to ₹3,000 on a minimum purchase of ₹5,000 Offer Validity: Sep 18 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer",
+    "Visa Servics ₹1,500 off on a minimum purchase of ₹10,000 Offer Validity: Sep 18 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.akbartravels.com/",
+   "final_url": "https://www.akbartravels.us/?force=1",
+   "page_title": "AkbarOffshore - Home",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "akbartravels.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.akbartravels.com/"
+   ]
+  },
+  {
+   "name": "Alaya Stays",
+   "category": "Travel",
+   "offers": [
+    "10% off up to ₹50,000 Use Code: ICICI10, ICICINCEMI Offer Validity: May 02, 2026 to Mar 31, 2027 Valid on Credit Card EMIs, Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.alayastays.com/",
+   "final_url": "https://www.alayastays.com/",
+   "page_title": "Searching for the Perfect Vacation Spot? Rent Premium Villas & Apartments Now - Alaya Stays",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "IDFC FIRST",
+    "Kotak"
+   ],
+   "screenshot": "alayastays.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.alayastays.com/"
+   ]
+  },
+  {
+   "name": "Amazon",
+   "category": "E-commerce",
+   "offers": [
+    "10% off up to ₹11,250 on a minimum purchase of ₹2,490 Offer Validity: Oct 21 to Oct 27, 2026 Valid on Credit Cards & Credit Card EMIsAvail Offer",
+    "10% off up to ₹4,250 on a minimum purchase of ₹5,000 Offer Validity: Nov 17 to Nov 30, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.amazon.in/",
+   "final_url": "https://www.amazon.in/",
+   "page_title": "Amazon.in",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "amazon.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.amazon.in/"
+   ]
+  },
+  {
+   "name": "Anvayaa",
+   "category": "Other offers",
+   "offers": [
+    "21% off on Anvayaa Elder Care Plan 10% off on Anvayaa Smart Emergency Response - Wearable device (smart watch) with in-built SOS service + 1 year of Emergency Assistance Offer Validity: Dec 01, 2025 to Nov 30, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.anvayaa.com/",
+   "final_url": "https://anvayaa.com/",
+   "page_title": "Best Elder Care Services at Home in India - Anvayaa Elder Care",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "HDFC"
+   ],
+   "screenshot": "anvayaa.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.anvayaa.com/"
+   ]
+  },
+  {
+   "name": "Apollo Pharmacy",
+   "category": "Other offers",
+   "offers": [
+    "15% off on Apollo private labelled products, 10% off on medicine & 5% off on FMCG products Use billing code: 183 Offer Validity: Feb 19, 2024 to Feb 16, 2027 Valid on Credit & Debit Cards Visit your nearest Apollo Pharmacy outlet"
+   ],
+   "status": "rival",
+   "url": "https://www.apollopharmacy.in/",
+   "final_url": "https://www.apollopharmacy.in/",
+   "page_title": "Online Medical Store, Online Medicine Order, Fastest Delivery - Apollo Pharmacy",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "SBI"
+   ],
+   "screenshot": "apollopharmacy.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.apollopharmacy.in/"
+   ]
+  },
+  {
+   "name": "Apple",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹7,000 instant cashback on iPhone 18 Pro & iPhone 18 Pro Max Offer Validity: Sep 18 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store",
+    "Up to ₹7,000 instant cashback on iPhone Duo Offer Validity: Oct 23 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store",
+    "₹15,000 instant cashback Offer Validity: Sep 18 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store",
+    "₹4,000 instant cashback Offer Validity: Sep 18 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store",
+    "₹4,000 instant cashback on Apple Watch Ultra 4 GPS Offer Validity: Sep 18 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store",
+    "₹2,000 instant cashback on AirPods Pro 3 Offer Validity: Sep 18 to Dec 26, 2026 Valid on Credit Cards and Credit Card EMIs Visit your nearest Apple authorised store"
+   ],
+   "status": "text",
+   "url": "https://www.apple.com/in/",
+   "final_url": "https://www.apple.com/in/",
+   "page_title": "Apple (India)",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "f an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001 applies. Click h",
+   "rivals": [
+    "Amex",
+    "Axis"
+   ],
+   "screenshot": "apple.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.apple.com/in/"
+   ]
+  },
+  {
+   "name": "Atomberg",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "10% off up to ₹1,900 on a minimum purchase of ₹18,999 Offer Validity: Sep 11 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store",
+    "Up to ₹3,000 off on a minimum purchase of ₹15,000. Valid on refrigerators Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://atomberg.com/",
+   "final_url": "https://atomberg.com/",
+   "page_title": "Atomberg: Buy Best Ceiling Fans, Mixer Grinders & Water Purifier",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "atomberg.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://atomberg.com/"
+   ]
+  },
+  {
+   "name": "Blinkit",
+   "category": "E-commerce",
+   "offers": [
+    "Up to ₹1,000 off on select categories/items on orders via Blinkit App Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Cards and Credit Card EMIsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://blinkit.com/",
+   "final_url": "https://blinkit.com/",
+   "page_title": "Just a moment...",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "blinkit.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://blinkit.com/"
+   ]
+  },
+  {
+   "name": "Blue Star",
+   "category": "Home appliances",
+   "offers": [
+    "Up to ₹4,000 off on Air conditioners Offer Validity: Oct 10 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.bluestarindia.com/",
+   "final_url": "https://www.bluestarindia.com/",
+   "page_title": "Blue Star Limited: HVAC, Air Conditioning and Refrigeration Since 1943",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "bluestar.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.bluestarindia.com/"
+   ]
+  },
+  {
+   "name": "Bonito Designs",
+   "category": "Home furnishing",
+   "offers": [
+    "5% off up to ₹10,000 on minimum purchase of ₹30,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.bonito.in/",
+   "final_url": "https://bonito.in/",
+   "page_title": "Home Interior Design | Celebrity Designed Homes | Bonito Designs | Bonito Designs",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "bonitodesigns.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.bonito.in/"
+   ]
+  },
+  {
+   "name": "Bookmark",
+   "category": "Travel",
+   "offers": [
+    "10% off on room tariffs. Valid on bookings with a minimum length of stay (LOS) of two nights. Offer Validity: Sep 11, 2026 to Sep 18, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Bosch",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹15,000 off on a minimum purchase of ₹15,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.bosch-home.in/",
+   "final_url": "https://www.bosch-home.in/en",
+   "page_title": "Quality, Sustainable Home Appliances | Bosch Home India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "bosch.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.bosch-home.in/"
+   ]
+  },
+  {
+   "name": "Bose",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹7,000 off on a minimum purchase of ₹10,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.boseindia.com/",
+   "final_url": "https://www.boseindia.com/",
+   "page_title": "Bose India | Headphones, speakers, wearables – Nexxbase | Bose Authorized Distributor",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "bose.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.boseindia.com/"
+   ]
+  },
+  {
+   "name": "BytePe",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹10,000 off on a minimum purchase of ₹20,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.bytepe.com/",
+   "final_url": "https://www.bytepe.com/",
+   "page_title": "BytePe - India's First Phone Subscription Service | Own Latest Smartphones for ₹999/month",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "bytepe.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.bytepe.com/"
+   ]
+  },
+  {
+   "name": "Carrier Midea",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "7.5% off up to ₹1,500 on a minimum purchase of ₹20,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.midea.com/in",
+   "final_url": "https://www.midea.com/in",
+   "page_title": "Midea India | Simply ideal - Innovative Home Appliances & Smart Solutions",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "carriermidea.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.midea.com/in"
+   ]
+  },
+  {
+   "name": "Carzonrent",
+   "category": "Travel",
+   "offers": [
+    "30% off on all rides Offer Validity: Dec 10, 2025 to Dec 09, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.carzonrent.com/",
+   "final_url": "https://www.carzonrent.com/",
+   "page_title": "Chauffeur Driven Car Rental & Corporate Mobility | Carzonrent",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "carzonrent.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.carzonrent.com/"
+   ]
+  },
+  {
+   "name": "Cleartax",
+   "category": "Other offers",
+   "offers": [
+    "Up to 75% off on self filing plans and expert assisted filing services Use Code: CTBICICI Offer Validity: Jul 05, 2026 to Mar 31, 2027 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://cleartax.in/",
+   "final_url": "https://cleartax.in/",
+   "page_title": "Income Tax Login | Income Tax efiling in India for FY 2025-26 (AY 2026-27) | ClearTax ITR Filing",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Axis"
+   ],
+   "screenshot": "cleartax.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://cleartax.in/"
+   ]
+  },
+  {
+   "name": "Cordelia Cruises",
+   "category": "Travel",
+   "offers": [
+    "Additional 25% off on select cabin categories Use Code: CRUISEICICI25 Offer Validity: Mar 10, 2026 to Mar 31, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://www.cordeliacruises.com/",
+   "final_url": null,
+   "page_title": null,
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": null,
+   "error": "Could not open page: Error: Page.evaluate: TypeError: Cannot read properties of undefined (reading 'call')",
+   "pages_checked": [
+    "https://www.cordeliacruises.com/"
+   ]
+  },
+  {
+   "name": "Croma",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "₹4,000 off on select iPhone 17 Pro & Pro Max models Offer Validity: Sep 15 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.croma.com/",
+   "final_url": "https://www.croma.com/",
+   "page_title": "Croma Electronics | Online Electronics Shopping | Buy Electronics Online",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "croma.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.croma.com/"
+   ]
+  },
+  {
+   "name": "Cuminco",
+   "category": "Home furnishing",
+   "offers": [
+    "Up to ₹1,000 off on kitchenware Offer Validity: Jun 04, 2026 to May 14, 2027 Valid on Credit Cards and Credit Card EMIsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://cuminco.com/",
+   "final_url": "https://www.cuminco.com/",
+   "page_title": "Healthy Enamel Cast Iron Cookware, Kitchenware, Utensil Set| Cumin Co.",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "cuminco.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://cuminco.com/"
+   ]
+  },
+  {
+   "name": "Daikin",
+   "category": "Home appliances",
+   "offers": [
+    "Up to ₹2,500 off on Air conditioners Offer Validity: Nov 02 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.daikinindia.com/",
+   "final_url": "https://daikinindia.com/",
+   "page_title": "Best Air Conditioners in India, Air Conditioner Company in India, Best Split Ac in India | Daikin India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "daikin.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.daikinindia.com/"
+   ]
+  },
+  {
+   "name": "Dell",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 10% off up to ₹20,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.dell.com/en-in",
+   "final_url": "https://www.dell.com/en-in",
+   "page_title": "Computers, Monitors & Technology Solutions. | Dell India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "dell.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.dell.com/en-in"
+   ]
+  },
+  {
+   "name": "District",
+   "category": "E-commerce",
+   "offers": [
+    "Up to ₹1,500 off on shopping Use Code: ICICISHOPEMI; ICICIAPAYSHOPEMI Offer Validity: Jul 13, 2026 to Mar 31, 2027 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.district.in/",
+   "final_url": "https://www.district.in/",
+   "page_title": "District by Zomato: Movies, Events, Dining, Sports & Concerts Nearby",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "SBI"
+   ],
+   "screenshot": "district.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.district.in/"
+   ]
+  },
+  {
+   "name": "DocOnline",
+   "category": "Other offers",
+   "offers": [
+    "23% off on healthcare packages Offer Validity: Feb 01, 2026 to Mar 31, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.doconline.com/",
+   "final_url": "https://www.doconline.com/",
+   "page_title": "Online Doctor Consultation India | Healthcare | 50+ Doctors @DocOnline",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "HSBC"
+   ],
+   "screenshot": "doconline.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.doconline.com/"
+   ]
+  },
+  {
+   "name": "Duroflex",
+   "category": "Home furnishing",
+   "offers": [
+    "5% off up to ₹3,000 on a minimum purchase of ₹15,000 Offer Validity: Sep 12 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store Avail Offer"
+   ],
+   "status": "text",
+   "url": "https://www.duroflexworld.com/",
+   "final_url": "https://www.duroflexworld.com/",
+   "page_title": "Buy Duroflex Mattresses, Sofa, Recliner, Beds & Pillows in India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "Get Up to ₹3000 Instant Discount using ICICI Credit Card EMI!",
+   "rivals": [
+    "HDFC",
+    "SBI"
+   ],
+   "screenshot": "duroflex.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.duroflexworld.com/"
+   ]
+  },
+  {
+   "name": "EaseMyTrip",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights & Hotels Up to ₹10,000 off on a minimum purchase of ₹5,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Flights & Hotels Up to ₹15,000 off on a minimum purchase of ₹10,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.easemytrip.com/",
+   "final_url": "https://www.easemytrip.com/",
+   "page_title": "EaseMyTrip : Book Flights, Hotels, Trains, Bus & Holidays",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Axis",
+    "Kotak",
+    "RBL"
+   ],
+   "screenshot": "easemytrip.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.easemytrip.com/"
+   ]
+  },
+  {
+   "name": "Electrolux",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "15% off up to ₹15,000 on a minimum purchase of ₹15,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.electrolux.in/",
+   "final_url": "https://www.electrolux.in/",
+   "page_title": "Electrolux India | Home, Kitchen & Electrical Appliances",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "electrolux.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.electrolux.in/"
+   ]
+  },
+  {
+   "name": "Elivaas",
+   "category": "Travel",
+   "offers": [
+    "10% off up to ₹50,000 Use Code: ICICI10, ICICINCEMI Offer Validity: May 02, 2026 to Mar 31, 2027 Valid on Credit Card EMIs, Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.elivaas.com/",
+   "final_url": "https://www.elivaas.com/",
+   "page_title": "ELIVAAS | Luxury Villa Vacation Rentals & Private Holiday Homes in India",
+   "icici_logo": "https://cpjlcwamma.cloudimg.io/ICICI_Light_63cba95c97.png?width=24&height=24&func=boundmin&force_format=webp&q=98 https://cpjlcwamma.cloudimg.io/ICICI_Light_63c",
+   "icici_logo_count": 4,
+   "icici_text": "ICICI Bank EMI Offer",
+   "rivals": [
+    "Axis",
+    "DBS",
+    "HDFC",
+    "HSBC",
+    "IDBI",
+    "IDFC FIRST",
+    "Kotak"
+   ],
+   "screenshot": "elivaas.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.elivaas.com/"
+   ]
+  },
+  {
+   "name": "Eureka Forbes",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 20% off up to ₹5,000 on a minimum purchase of ₹7,500 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.eurekaforbes.com/",
+   "final_url": "https://www.eurekaforbes.com/",
+   "page_title": "The Big Exchange | Up to ₹2000 off on Exchange*| Sale Live Now | Eureka Forbes",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "eurekaforbes.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.eurekaforbes.com/"
+   ]
+  },
+  {
+   "name": "FNP",
+   "category": "Other offers",
+   "offers": [
+    "20% off up to ₹700 on a minimum purchase of ₹1,199 Use code: ICICI20 Offer Validity: Aug 13 to Dec 31, 2026 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.fnp.com/",
+   "final_url": "https://www.fnp.com/",
+   "page_title": "FNP | Ferns N Petals: India’s #1 Online Gift Store | 60 Mins Delivery",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "fnp.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.fnp.com/"
+   ]
+  },
+  {
+   "name": "Fitelo",
+   "category": "Health and wellness",
+   "offers": [
+    "5% off up to ₹1,000 on a minimum purchase of ₹15,000. Valid on No Cost EMI of 6 months & above. Offer Validity: Oct 22, 2026 to Jan 31, 2027 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "error",
+   "url": "https://fitelo.co/",
+   "final_url": "https://fitelo.co/",
+   "page_title": "Checking your browser...",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "fitelo.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://fitelo.co/"
+   ]
+  },
+  {
+   "name": "Furniselan",
+   "category": "Home furnishing",
+   "offers": [
+    "Additional 5% off up to ₹10,000 on a minimum purchase of ₹15,000 Offer Validity: Sep 01 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Godrej",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 20% off up to ₹8,000 on minimum purchase of ₹15,000 Offer Validity: Oct 01 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.godrej.com/",
+   "final_url": "https://www.godrej.com/",
+   "page_title": "Welcome to Godrej",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "godrej.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.godrej.com/"
+   ]
+  },
+  {
+   "name": "Goibibo",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights Up to 12% off up to ₹2,000 on a minimum purchase of ₹4,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 10% off up to ₹1,800 on a minimum purchase of ₹5,000 Use Code: GOICICIFEST Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Domestic Hotels Up to 15% off up to ₹10,000 on a minimum purchase of ₹2,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 15% off up to ₹5,000 on a minimum purchase of ₹4,000 Use Code: GOICICIFEST Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "International Flights Up to 12% off up to ₹10,000 on a minimum purchase of ₹10,000 Use Code: ICICIINTEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 10% off up to ₹7,500 on a minimum purchase of ₹15,000 Use Code: GOICICIFESTINT Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "International Hotels Up to 15% off up to ₹20,000 on a minimum purchase of ₹5,000 Use Code: ICICIINTEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 15% off up to ₹15,000 on a minimum purchase of ₹10,000 Use Code: GOICICIFESTINT Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Cabs & Buses Airport Cabs & Hourly Rental Cabs: Up to 15% off up to ₹2,000 on a minimum purchase of ₹1,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Airport Cabs & Hourly Rental Cabs: Up to 10% off up to ₹1,500 on a minimum purchase of ₹1,500 Use Code: GOICICIFEST Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer Outstation Cabs: Up to 15% off up to ₹10,000 on a minimum purchase of ₹3,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Outstation Cabs: Up to 10% off up to ₹7,500 on a minimum purchase of ₹3,000 Use Code: GOICICIFEST Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer AC Bus: Up to 8% off up to ₹1,000 on a minimum purchase of ₹1,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer AC Bus: Up to 5% off up to ₹500 on a minimum purchase of ₹2,000 Use Code: GOICICIFEST Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.goibibo.com/",
+   "final_url": "https://www.goibibo.com/",
+   "page_title": "Goibibo - Best Travel Website. Book Hotels, Flights, Trains, Bus and Cabs with upto 50% off",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "goibibo.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.goibibo.com/"
+   ]
+  },
+  {
+   "name": "Google Store",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹10,000 off on Google Pixel 11 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card & Credit Card EMIs Avail Offer",
+    "Up to ₹10,000 off on Google Pixel 11 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Cards & Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://store.google.com/in/",
+   "final_url": "https://store.google.com/in/?hl=en-IN",
+   "page_title": "Google Store for Google Made Devices & Accessories",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "googlestore.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://store.google.com/in/"
+   ]
+  },
+  {
+   "name": "HP",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹18,000 off on a minimum purchase of ₹69,999 Offer Validity: Sep 01 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.hp.com/in-en/shop/",
+   "final_url": "https://www.hp.com/in-en/shop/",
+   "page_title": "Official HP Store™ | HP Laptops, Desktops, Monitor & Printers",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "hp.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.hp.com/in-en/shop/"
+   ]
+  },
+  {
+   "name": "Haier",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 25% off up to ₹25,000 on a minimum purchase of ₹15,000 Offer Validity: Aug 26 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.haier.com/in/",
+   "final_url": "https://www.haier.com/in/",
+   "page_title": "Home Appliances: Buy Refrigerator, Washing Machine, AC, TV and More | Haier India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "haier.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.haier.com/in/"
+   ]
+  },
+  {
+   "name": "Haus & Kinder",
+   "category": "Home furnishing",
+   "offers": [
+    "Additional up to 10% off on a minimum purchase of ₹2,499 Offer Validity: May 16, 2026 to May 15, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://hausandkinder.com/",
+   "final_url": "https://hausandkinder.com/",
+   "page_title": "Haus & Kinder - High-Quality Bed Sheets, Towels, Cushion-Covers & More – haus & kinder",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "hauskinder.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://hausandkinder.com/"
+   ]
+  },
+  {
+   "name": "Hazel Kitchenware",
+   "category": "Home furnishing",
+   "offers": [
+    "10% off up to ₹250 on a minimum purchase of ₹999 Use Code: ICICIHAZEL Offer Validity: Sep 09, 2026 to Sep 08, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Hisense",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹20,000 off on a minimum purchase of ₹17,499. Valid on TVs. Offer Validity: Oct 16, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.hisense-india.com/",
+   "final_url": "https://www.hisense-india.com/",
+   "page_title": "Explore Hisense TV & AC for Entertainment & Cooling Solutions",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "hisense.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.hisense-india.com/"
+   ]
+  },
+  {
+   "name": "IFB",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 15% off on minimum purchase of ₹10,000 Offer Validity: Oct 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.ifbappliances.com/",
+   "final_url": "https://www.ifbappliances.com/",
+   "page_title": "IFB Appliances - Smart Home, Kitchen & Commercial Appliances",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "ifb.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.ifbappliances.com/"
+   ]
+  },
+  {
+   "name": "IGP",
+   "category": "Other offers",
+   "offers": [
+    "20% off on a minimum purchase of ₹1,200 Use code: IGPICICI20 Offer Validity: Aug 01, 2025 to Jul 31, 2027 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.igp.com/",
+   "final_url": "https://www.igp.com/",
+   "page_title": "IGP: Online Gift Delivery | Send Gifts to India, Online Gifts Shop",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "igp.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.igp.com/"
+   ]
+  },
+  {
+   "name": "INSPL",
+   "category": "Other offers",
+   "offers": [
+    "25% off on inheritance related services for Indian assets (PIC, PIC-R and I-Need) Offer Validity: Oct 01, 2025 to Sep 30, 2028 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "IndiaFilings",
+   "category": "Other offers",
+   "offers": [
+    "25% off on professional fee for eligible services Offer Validity: Jun 01, 2026 to Mar 31, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.indiafilings.com/",
+   "final_url": "https://www.indiafilings.com/",
+   "page_title": "IndiaFilings - Corporate Services & Compliance Platform",
+   "icici_logo": "https://img.indiafilings.com/partners-bank-logo/icici.png https://img.indiafilings.com/partners-bank-logo/icici.png https://img.indiafilings.com/partners-bank-l",
+   "icici_logo_count": 1,
+   "icici_text": "",
+   "rivals": [
+    "DBS"
+   ],
+   "screenshot": "indiafilings.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.indiafilings.com/"
+   ]
+  },
+  {
+   "name": "Interior Company",
+   "category": "Home furnishing",
+   "offers": [
+    "Additional up to 30% off on a minimum purchase of ₹3,00,000. Valid on modular interiors. Offer Validity: Sep 11, 2026 to Mar 09, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://interiorcompany.com/",
+   "final_url": "https://www.interiorcompany.com/",
+   "page_title": "Interior Company: Best Interior Designers Company in India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "interiorcompany.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://interiorcompany.com/"
+   ]
+  },
+  {
+   "name": "JBL",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 15% off up to ₹10,000 Offer Validity: Sep 01 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "error",
+   "url": "https://in.jbl.com/",
+   "final_url": "https://in.jbl.com/",
+   "page_title": "Official JBL Store - Speakers, Headphones, and More!",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "jbl.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://in.jbl.com/"
+   ]
+  },
+  {
+   "name": "Justa Hotels",
+   "category": "Travel",
+   "offers": [
+    "10% off on room tariffs. Valid on bookings with a minimum length of stay (LOS) of two nights. Offer Validity: Sep 11, 2026 to Sep 18, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.justahotels.com/",
+   "final_url": "https://www.justahotels.com/",
+   "page_title": "Experience Luxury and Art at jüSTa Hotels & Resorts - Your Perfect Stay Awaits",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "justahotels.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.justahotels.com/"
+   ]
+  },
+  {
+   "name": "Kent RO",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Additional up to ₹1,500 off on select Kent products Offer Validity: Oct 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.kent.co.in/",
+   "final_url": "https://www.kent.co.in/",
+   "page_title": "Kent RO Systems - India's Trusted Water Purifier, Appliances",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "kentro.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.kent.co.in/"
+   ]
+  },
+  {
+   "name": "KitchenOre",
+   "category": "Home furnishing",
+   "offers": [
+    "10% off up to ₹250 on a minimum purchase of ₹999 Use Code: ICICIHAZEL Offer Validity: Sep 09, 2026 to Sep 08, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://kitchenore.com/",
+   "final_url": "https://kitchenore.com/",
+   "page_title": "KitchenOre: Premium Durable Cookware & Kitchenware Products Online",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "kitchenore.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://kitchenore.com/"
+   ]
+  },
+  {
+   "name": "LG",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 26% off up to ₹30,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.lg.com/in/",
+   "final_url": "https://www.lg.com/in/",
+   "page_title": "Consumer & Home Electronics from LG | LG India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "lg.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.lg.com/in/"
+   ]
+  },
+  {
+   "name": "LifeCell",
+   "category": "Health and wellness",
+   "offers": [
+    "30% off on standalone diagnostic tests & 20% off on packages Offer Validity: Nov 01, 2026 to Oct 14, 2027 Valid on Credit & Debit Cards Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.lifecell.in/",
+   "final_url": "https://www.lifecell.in/",
+   "page_title": "Cord blood banking | Best Stem Cell Bank in India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "lifecell.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.lifecell.in/"
+   ]
+  },
+  {
+   "name": "Lilavati Hospital",
+   "category": "Other offers",
+   "offers": [
+    "10% off on doctor consultation, OPD investigation & medicine and health checkup Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Cards, Debit Cards, Credit & Debit Card EMIs Visit Lilavati Hospital to avail the offer"
+   ],
+   "status": "none",
+   "url": "https://www.lilavatihospital.com/",
+   "final_url": "https://www.lilavatihospital.com/",
+   "page_title": "Lilavati Hospital & Research Centre | Top Multi Speciality Hospital in Mumbai",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "lilavatihospital.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.lilavatihospital.com/"
+   ]
+  },
+  {
+   "name": "Lumio",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 12% off up to ₹15,000 on a minimum purchase of ₹15,000 Offer Validity: Oct 08 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://lumio.co.in/",
+   "final_url": "https://lumio.co.in/",
+   "page_title": "Lumio: Smart TVs, Projectors & Hi-Fi Speakers in India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "lumio.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://lumio.co.in/"
+   ]
+  },
+  {
+   "name": "MakeMyTrip",
+   "category": "Travel",
+   "offers": [
+    "International Flights Up to 12% off up to ₹10,000 on a minimum purchase of ₹10,000 Use Code: ICICIINTEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 10% off up to ₹7,500 on a minimum purchase of ₹15,000 Use Code: MMTICICIINT Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Domestic Flights Up to 12% off up to ₹2,000 on a minimum purchase of ₹4,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 10% off up to ₹1,800 on a minimum purchase of ₹5,000 Use Code: FLYMON Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Domestic Hotels Up to 15% off up to ₹10,000 on a minimum purchase of ₹2,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 15% off up to ₹5,000 on a minimum purchase of ₹4,000 Use Code: ICICILUXURY Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "International Hotels Up to 15% off up to ₹20,000 on a minimum purchase of ₹5,000 Use Code: ICICIINTEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Up to 15% off up to ₹15,000 on a minimum purchase of ₹10,000 Use Code: ICICILUXURYINT Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Holidays & Tours Holidays: Up to 35% off up to ₹35,000 on a minimum purchase of ₹25,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Holidays: Up to 35% off up to ₹30,000 on a minimum purchase of ₹30,000 Use Code: MMTICICI Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer Tours & Attractions: Up to 15% off up to ₹3,000 on a minimum purchase of ₹2,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Tours & Attractions: Up to 10% off up to ₹2,000 on a minimum purchase of ₹5,000 Use Code: MMTICICI Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer",
+    "Cabs & Buses Airport Cabs & Hourly Rental Cabs: Up to 15% off up to ₹2,000 on a minimum purchase of ₹1,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Airport Cabs & Hourly Rental Cabs: Up to 10% off up to ₹1,500 on a minimum purchase of ₹1,500 Use Code: MMTICICI Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer Outstation Cabs: Up to 15% off up to ₹10,000 on a minimum purchase of ₹3,000 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer Outstation Cabs: Up to 10% off up to ₹7,500 on a minimum purchase of ₹3,000 Use Code: MMTICICI Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer AC Bus: Up to 8% off up to ₹1,000 on a minimum purchase of ₹1,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer AC Bus: Up to 5% off up to ₹500 on a minimum purchase of ₹2,000 Use Code: MMTICICI Offer Validity: Oct 01 to Dec 31, 2026 (every Monday) Valid on Credit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.makemytrip.com/",
+   "final_url": "https://www.makemytrip.global/?cc=am&redirectedBy=gl",
+   "page_title": "MakeMyTrip - #1 Travel Website for Flight & Hotel Booking",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "makemytrip.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.makemytrip.com/"
+   ]
+  },
+  {
+   "name": "MeraDoc",
+   "category": "Other offers",
+   "offers": [
+    "Exclusive healthcare benefits worth ₹4,298 available at ₹1,299 on MeraDoc healthcare package + 6-month family plan Offer Validity: Jul 20, 2026 to May 01, 2027 Valid on Credit & Debit Cards and Internet Banking 15% off on select MeraDoc services Offer Validity: Jul 20, 2026 to May 01, 2027 Valid on Credit & Debit Cards and Internet Banking Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.meradoc.com/",
+   "final_url": "https://www.meradoc.com/",
+   "page_title": "MeraDoc",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "meradoc.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.meradoc.com/"
+   ]
+  },
+  {
+   "name": "Microsoft Surface",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹16,000 off Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Cards & Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.microsoft.com/en-in/surface",
+   "final_url": "https://www.microsoft.com/en-in/surface",
+   "page_title": "Microsoft Surface: Laptops, Tablets &amp; Computers | Microsoft Surface",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "microsoftsurface.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.microsoft.com/en-in/surface"
+   ]
+  },
+  {
+   "name": "Nasher Miles",
+   "category": "Travel",
+   "offers": [
+    "10% off up to ₹2,000 on a minimum purchase of ₹10,000 Offer Validity: Jan 10 to Dec 31, 2026 Valid on Credit & Debit Cards ₹500 off on a minimum purchase of ₹4,999 Offer Validity: Jan 10 to Dec 31, 2026 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://nashermiles.com/",
+   "final_url": "https://nashermiles.com/",
+   "page_title": "Buy Travel Trolley Luggage Bags in India | Nasher Miles",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nashermiles.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://nashermiles.com/"
+   ]
+  },
+  {
+   "name": "Native by Urban Company",
+   "category": "Home appliances",
+   "offers": [
+    "Up to ₹1,500 off on a minimum purchase of ₹14,499. Valid on select products Offer Validity: Nov 16 to Dec 24, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.urbancompany.com/native",
+   "final_url": "https://www.urbancompany.com/native/",
+   "page_title": "Native RO Water Purifiers in India — From ₹12,699",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nativebyurbancompany.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.urbancompany.com/native"
+   ]
+  },
+  {
+   "name": "Nespresso",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "5% off up to ₹1,500 on a minimum purchase of ₹15,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store Avail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.nespresso.com/in/en/",
+   "final_url": "https://www.nespresso.com/in/en/",
+   "page_title": "Nespresso India - Coffee Capsules, Espresso Machines, Accessories | Nespresso™ India",
+   "icici_logo": "https://www.nespresso.com/in/media/wysiwyg/ICICI_offer_banner_20nov.png https://www.nespresso.com/in/media/wysiwyg/ICICI_offer_banner_20nov.png img",
+   "icici_logo_count": 3,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nespresso.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.nespresso.com/in/en/"
+   ]
+  },
+  {
+   "name": "Nilkamal Furniture",
+   "category": "Home furnishing",
+   "offers": [
+    "10% off up to ₹1,500 on a minimum purchase of ₹10,000 Offer Validity: Oct 07 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.nilkamalfurniture.com/",
+   "final_url": "https://www.nilkamalfurniture.com/",
+   "page_title": "Home Furniture | Office Furniture | Mattresses | Nilkamal Furniture",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nilkamalfurniture.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.nilkamalfurniture.com/"
+   ]
+  },
+  {
+   "name": "Nomad",
+   "category": "Travel",
+   "offers": [
+    "15% off on Nomad eSIM (provides cheaper data plans during international trips) Offer Validity: May 24, 2025 to May 21, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.getnomad.app/",
+   "final_url": "https://www.nomadesim.com/",
+   "page_title": "Nomad - International data eSIMs in 200+ destinations",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nomad.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.getnomad.app/"
+   ]
+  },
+  {
+   "name": "Nothing",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "10% off up to ₹4,500 on a minimum purchase of ₹20,999 Offer Validity: Oct 16 to Nov 30, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://in.nothing.tech/",
+   "final_url": "https://in.nothing.tech/",
+   "page_title": "Nothing | IN",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "nothing.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://in.nothing.tech/"
+   ]
+  },
+  {
+   "name": "OPPO",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "7% up to ₹5,000 off on a minimum purchase of ₹20,000 Offer Validity: Aug 26 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.oppo.com/in/",
+   "final_url": "https://www.oppo.com/in/",
+   "page_title": "OPPO Official Site | OPPO India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "oppo.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.oppo.com/in/"
+   ]
+  },
+  {
+   "name": "OnePlus",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹4,000 off on select OnePlus products Offer Validity: Nov 01 to Nov 30, 2026 Valid on Credit Cards & Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.oneplus.in/",
+   "final_url": "https://www.oneplus.in/",
+   "page_title": "OnePlus India: Phones, Tablets and Wearables",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "oneplus.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.oneplus.in/"
+   ]
+  },
+  {
+   "name": "OneSky",
+   "category": "Fashion and jewellery",
+   "offers": [
+    "15% off Use code: ICICI15ONESKY Offer Validity: Jan 10, 2026 to Mar 31, 2027 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Onida",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 10% off up to ₹7,500 on a minimum purchase of ₹17,990 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.onida.com/",
+   "final_url": "https://onida.com/",
+   "page_title": "Onida - TVs, ACs & Home Appliances | India Ka Onida",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "onida.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.onida.com/"
+   ]
+  },
+  {
+   "name": "Origem",
+   "category": "Jewellery",
+   "offers": [
+    "Up to ₹10,000 off on jewellery Offer Validity: Nov 06, 2026 to Nov 30, 2026 Valid on Credit Cards Visit your nearest brand store"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "PNGS Reva Diamond",
+   "category": "Jewellery",
+   "offers": [
+    "Up to ₹10,000 off on minimum purchase on ₹50,000 Offer Validity: Nov 01 to Nov 30, 2026 Valid on Credit Cards Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://revadiamonds.com/",
+   "final_url": "https://revadiamonds.com/",
+   "page_title": "Reva Diamonds",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "pngsrevadiamond.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://revadiamonds.com/"
+   ]
+  },
+  {
+   "name": "Paytm Flights",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights Up to ₹1,500 off on a minimum purchase of ₹5,000 Use Code: FLYICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Flights 10% off up to ₹7,500 on a minimum purchase of ₹10,000 Use Code: INTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "logo",
+   "url": "https://tickets.paytm.com/flights/",
+   "final_url": "https://tickets.paytm.com/flights/",
+   "page_title": "Flight Ticket Booking Online: Book Cheap Flights | Paytm",
+   "icici_logo": "In image (read by OCR): iICICIBank",
+   "icici_logo_count": 1,
+   "icici_text": "",
+   "rivals": [
+    "Amex",
+    "Axis"
+   ],
+   "screenshot": "paytmflights.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://tickets.paytm.com/flights/"
+   ]
+  },
+  {
+   "name": "Pepperfry",
+   "category": "Home furnishing",
+   "offers": [
+    "10% off up to ₹4,000 on a minimum purchase of ₹10,000 Use Code: ICICIEMI10 Offer Validity: Oct 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.pepperfry.com/",
+   "final_url": "https://www.pepperfry.com/",
+   "page_title": "Best Furniture & Home Decor Online in India - Up to 70% Off | Pepperfry",
+   "icici_logo": "In image (read by OCR): ICICIBankHDFCBANK",
+   "icici_logo_count": 1,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "pepperfry.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.pepperfry.com/"
+   ]
+  },
+  {
+   "name": "Philips",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹1,500 off on Philips Party Speakers and Soundbars Offer Validity: Aug 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.philips.co.in/",
+   "final_url": "https://www.philips.co.in/",
+   "page_title": "Philips - India | Philips",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "philips.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.philips.co.in/"
+   ]
+  },
+  {
+   "name": "PickYourTrail",
+   "category": "Travel",
+   "offers": [
+    "Up to ₹12,000 off on a minimum purchase of ₹50,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.pickyourtrail.com/",
+   "final_url": "https://pickyourtrail.com/",
+   "page_title": "Custom International Holiday Packages – Plan Your Trip with Pickyourtrail",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Kotak"
+   ],
+   "screenshot": "pickyourtrail.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.pickyourtrail.com/"
+   ]
+  },
+  {
+   "name": "Pureit",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "10% off up to ₹2,500 on a minimum purchase of ₹9,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.pureitwater.com/",
+   "final_url": "https://www.pureitwater.com/",
+   "page_title": "Best Home RO Water Purifiers Online - Pureit Water India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "pureit.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.pureitwater.com/"
+   ]
+  },
+  {
+   "name": "Redcliffe Labs",
+   "category": "Other offers",
+   "offers": [
+    "20% off on a minimum purchase of ₹699 Offer Validity: Jan 05 to Dec 31, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer",
+    "Up to 20% off up to ₹300 on a minimum purchase of ₹1,249 Offer Validity: Jul 14 to Nov 30, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://redcliffelabs.com/",
+   "final_url": "https://redcliffelabs.com/",
+   "page_title": "Just a moment...",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "redcliffelabs.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://redcliffelabs.com/"
+   ]
+  },
+  {
+   "name": "Reliance Digital",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "5% off up to ₹12,500 on a minimum purchase of ₹10,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "rival",
+   "url": "https://www.reliancedigital.in/",
+   "final_url": "https://www.reliancedigital.in/",
+   "page_title": "Online Electronic Shopping Store in India | Best Electronic Store",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "HDFC"
+   ],
+   "screenshot": "reliancedigital.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.reliancedigital.in/"
+   ]
+  },
+  {
+   "name": "Samsung",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to 27.5% off on Samsung Panels and Home Theatre System Offer Validity: Jul 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store Up to 25% off on Samsung Refrigerators, Washing Machines, Air Conditioners & Microwave Ovens Offer Validity: Jul 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.samsung.com/in/",
+   "final_url": "https://www.samsung.com/in/",
+   "page_title": "Samsung India | Mobile | Tablets | TV | Home Appliances",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "samsung.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.samsung.com/in/"
+   ]
+  },
+  {
+   "name": "Sharp",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹2,000 off on select products Offer Validity: Sep 30 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "rival",
+   "url": "https://in.sharp/",
+   "final_url": "https://in.sharp/",
+   "page_title": "Sharp India- Smart Business & Appliances Solutions",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "SBI"
+   ],
+   "screenshot": "sharp.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://in.sharp/"
+   ]
+  },
+  {
+   "name": "Sleepycat",
+   "category": "Home furnishing",
+   "offers": [
+    "Additional 7.5% off up to ₹5,000 on a minimum purchase of ₹15,000 Offer Validity: Oct 10 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.sleepycat.in/",
+   "final_url": "https://sleepycat.in/",
+   "page_title": "Buy Mattresses & Pillows online from India's Best Mattress Brand",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "sleepycat.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.sleepycat.in/"
+   ]
+  },
+  {
+   "name": "Sleepyhead",
+   "category": "Home furnishing",
+   "offers": [
+    "5% off up to ₹3,000 on a minimum purchase of ₹15,000 Offer Validity: Sep 12 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "rival",
+   "url": "https://mysleepyhead.com/",
+   "final_url": "https://mysleepyhead.com/",
+   "page_title": "Buy Sleepyhead Mattresses, Sofas, Recliners, Beds, and Fu...",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "HDFC"
+   ],
+   "screenshot": "sleepyhead.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://mysleepyhead.com/"
+   ]
+  },
+  {
+   "name": "Solara Home",
+   "category": "Home furnishing",
+   "offers": [
+    "5% off up to ₹1,500 on a minimum purchase of ₹5,000 Offer Validity: Oct 08 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Sony",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹27,500 off on a minimum purchase of ₹18,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.shopatsc.com/",
+   "final_url": "https://shopatsc.com/",
+   "page_title": "Online Electronics Store of Sony Products | Sony Center",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "sony.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.shopatsc.com/"
+   ]
+  },
+  {
+   "name": "Surat Diamonds",
+   "category": "Fashion and jewellery",
+   "offers": [
+    "₹5,000 off on a minimum purchase of ₹15,000 Use Code: ICICIBNK5000 Offer Validity: May 01 to Dec 31, 2026 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.suratdiamond.com/",
+   "final_url": "https://www.suratdiamond.com/",
+   "page_title": "Buy Diamond Jewellery Online, Rings, Necklace, Pendant",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Axis",
+    "HDFC",
+    "SBI",
+    "Yes Bank"
+   ],
+   "screenshot": "suratdiamonds.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.suratdiamond.com/"
+   ]
+  },
+  {
+   "name": "Swiggy",
+   "category": "Food ordering and dining",
+   "offers": [
+    "5% off on a minimum order value of ₹299 on food delivery orders Offer Validity: Nov 01 to Nov 30, 2026 Valid on Amazon Pay ICICI Bank Credit CardsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.swiggy.com/",
+   "final_url": "https://www.swiggy.com/",
+   "page_title": "Order Food & Groceries. Discover the best restaurants. Swiggy it!",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "swiggy.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.swiggy.com/"
+   ]
+  },
+  {
+   "name": "TCL",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Additional up to 10% off up to ₹10,000 on minimum purchase of ₹ 8,000 Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.tcl.com/in/en",
+   "final_url": "https://www.tcl.com/in/en",
+   "page_title": "TCL Electronics - Get Latest TVs, ACs, Washing Machine | TCL India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "tcl.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.tcl.com/in/en"
+   ]
+  },
+  {
+   "name": "Tata CLiQ Fashion",
+   "category": "Fashion and jewellery",
+   "offers": [
+    "12% off up to ₹1,000 on a minimum purchase of ₹3,000 Use Code: TCFICICIEMI Offer Validity: Aug 14 to Nov 30, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://www.tatacliq.com/",
+   "final_url": "https://www.tatacliq.com/",
+   "page_title": "Online Shopping Site in India - Upto 60% Off On Mobiles, Electronics & Fashion at Tata CLiQ",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Amex",
+    "Axis",
+    "HDFC",
+    "Kotak",
+    "RBL"
+   ],
+   "screenshot": "tatacliqfashion.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.tatacliq.com/"
+   ]
+  },
+  {
+   "name": "Tata CLiQ Luxury",
+   "category": "Fashion and jewellery",
+   "offers": [
+    "12% off up to ₹2,000 on a minimum purchase of ₹5,000 Use Code: TCLICICIEMI Offer Validity: Aug 14 to Nov 30, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "rival",
+   "url": "https://luxury.tatacliq.com/",
+   "final_url": "https://luxury.tatacliq.com/",
+   "page_title": "TATA CLiQ Luxury: Black Friday Sale",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [
+    "Amex",
+    "Axis",
+    "HDFC",
+    "Kotak",
+    "RBL"
+   ],
+   "screenshot": "tatacliqluxury.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://luxury.tatacliq.com/"
+   ]
+  },
+  {
+   "name": "TaxBuddy",
+   "category": "Other offers",
+   "offers": [
+    "20% off on all Tax related services (ITR Filing, Tax planning, Notice Management, GST, etc.) Offer Validity: May 01, 2025 to Apr 30, 2027 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.taxbuddy.com/",
+   "final_url": "https://www.taxbuddy.com/",
+   "page_title": "Income Tax Login | Best ITR Filing Platform File Income Tax Return for FY 2025-26 (AY 2026-27) | TaxBuddy",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "taxbuddy.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.taxbuddy.com/"
+   ]
+  },
+  {
+   "name": "The Paul John Hotels",
+   "category": "Travel",
+   "offers": [
+    "20% off Use Code: ICICI Offer Validity: May 21, 2026 to Mar 31, 2027 Valid on Credit & Debit Cards and Internet BankingAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.pauljohnhotels.com/",
+   "final_url": "https://www.pauljohnhotels.com/",
+   "page_title": "Paul John Resorts & Hotels, Kerala Resort, Bangalore City Hotel",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "thepauljohnhotels.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.pauljohnhotels.com/"
+   ]
+  },
+  {
+   "name": "The Sleep Company",
+   "category": "Home furnishing",
+   "offers": [
+    "6% off up to ₹5,000 on a minimum purchase of ₹20,000 Offer Validity: Sep 22, 2026 to Nov 30, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://thesleepcompany.in/",
+   "final_url": "https://thesleepcompany.in/",
+   "page_title": "Buy The Sleep Company Mattress Online | Top Mattress Brand in India",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "thesleepcompany.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://thesleepcompany.in/"
+   ]
+  },
+  {
+   "name": "Toshiba Midea",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "10% off up to ₹6,500 on a minimum purchase of ₹15,000 Offer Validity: Oct 06 to Dec 31, 2026 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "none",
+   "url": "https://www.toshiba-lifestyle.com/in/",
+   "final_url": "https://www.toshiba-lifestyle.com/in",
+   "page_title": "India's Trusted Home Appliances Platform | Toshiba Lifestyle",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "toshibamidea.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.toshiba-lifestyle.com/in/"
+   ]
+  },
+  {
+   "name": "Urban Ladder",
+   "category": "Home furnishing",
+   "offers": [
+    "7% off up to ₹3,500 on a minimum purchase of ₹15,000 Offer Validity: Sep 18, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.urbanladder.com/",
+   "final_url": "https://www.urbanladder.com/",
+   "page_title": "Buy Furniture Online: Upto 70% off in this Festive Season",
+   "icici_logo": "https://cdn.swadeshonline.com/v2/patient-paper-41f385/swad-p/wrkr/company/17/applications/65f437fae78851028707daee/theme/pictures/free/original/ICICI-Icon-17896",
+   "icici_logo_count": 1,
+   "icici_text": "Up to ₹3,500 Instant Discount on ICICI Bank Credit Card EMI Transactions",
+   "rivals": [
+    "Amex",
+    "HDFC",
+    "SBI"
+   ],
+   "screenshot": "urbanladder.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.urbanladder.com/"
+   ]
+  },
+  {
+   "name": "Vergo",
+   "category": "Home furnishing",
+   "offers": [
+    "7.5% off up to ₹2,500 on a minimum purchase of ₹5,000 Offer Validity: Sep 01, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "Website not set in data/brands.json"
+  },
+  {
+   "name": "Vijay Sales",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹15,000 off on a minimum purchase of ₹12,500 Offer Validity: Oct 11, 2026 to Mar 31, 2027 Valid on Credit Card EMIs Visit your nearest brand store"
+   ],
+   "status": "logo",
+   "url": "https://www.vijaysales.com/",
+   "final_url": "https://www.vijaysales.com/",
+   "page_title": "Vijay Sales: Best Online Electronics Shopping Store in India",
+   "icici_logo": "https://www.vijaysales.com/_jcr_content/root/container/container/vscontainer_13986236_117767020/vscontainer/extendedteaser_copy__230550695.coreimg.jpeg/17945508",
+   "icici_logo_count": 2,
+   "icici_text": "Get Upto Rs 15,000 Instant Discount on ICICI Bank Credit Cards EMI",
+   "rivals": [
+    "Amex",
+    "Bank of Baroda",
+    "HDFC",
+    "HSBC",
+    "IDFC FIRST",
+    "IndusInd",
+    "RBL",
+    "SBI",
+    "Yes Bank"
+   ],
+   "screenshot": "vijaysales.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.vijaysales.com/"
+   ]
+  },
+  {
+   "name": "WearKatha",
+   "category": "Fashion",
+   "offers": [
+    "Additional 10% off Offer Validity: Oct 29, 2026 to Mar 31, 2027 Valid on Credit & Debit CardsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://wearkatha.com/",
+   "final_url": "https://wearkatha.com/",
+   "page_title": "Wear Katha",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "wearkatha.jpg",
+   "error": "Page blocked or did not load (HTTP 200)",
+   "pages_checked": [
+    "https://wearkatha.com/"
+   ]
+  },
+  {
+   "name": "Xiaomi",
+   "category": "Mobiles and electronics",
+   "offers": [
+    "Up to ₹10,000 off on Xiaomi smartphones, TVs and tablets Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIs Avail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.mi.com/in/",
+   "final_url": "https://www.mi.com/in/",
+   "page_title": "Xiaomi India | Smartphone | Tablet | TV",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "xiaomi.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.mi.com/in/"
+   ]
+  },
+  {
+   "name": "Yatra",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights 12% off up to ₹2,000 on a minimum purchase of ₹5,000 Use Code: YTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Flights 10% off up to ₹7,000 on a minimum purchase of ₹15,000 Use Code: YTICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://www.yatra.com/",
+   "final_url": null,
+   "page_title": null,
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": null,
+   "error": "Could not open page: Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.yatra.com/",
+   "pages_checked": [
+    "https://www.yatra.com/"
+   ]
+  },
+  {
+   "name": "Zepto",
+   "category": "E-commerce",
+   "offers": [
+    "5% off up to ₹4,000 on a minimum purchase of ₹3,000 Offer Validity: Oct 03 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "none",
+   "url": "https://www.zeptonow.com/",
+   "final_url": "https://www.zepto.com/",
+   "page_title": "Zepto: Online Grocery Delivery App - Groceries in Minutes",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "zepto.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.zeptonow.com/"
+   ]
+  },
+  {
+   "name": "Zomato",
+   "category": "Food ordering and dining",
+   "offers": [
+    "Additional 5% off on a minimum order value of ₹299 on food delivery orders Offer Validity: Nov 03 to Nov 30, 2026 Valid on Amazon Pay ICICI Bank Credit CardsAvail Offer"
+   ],
+   "status": "error",
+   "url": "https://www.zomato.com/",
+   "final_url": "https://www.zomato.com/",
+   "page_title": "Access Denied",
+   "icici_logo": "",
+   "icici_logo_count": 0,
+   "icici_text": "",
+   "rivals": [],
+   "screenshot": "zomato.jpg",
+   "error": "Page blocked or did not load (HTTP 403)",
+   "pages_checked": [
+    "https://www.zomato.com/"
+   ]
+  },
+  {
+   "name": "ixigo",
+   "category": "Travel",
+   "offers": [
+    "Domestic Flights Up to 12% off up to ₹2,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "Domestic Hotels Up to 12% off up to ₹2,500 Use Code: ICICIEMI Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Flights Up to 12% off up to ₹7,500 Use Code: ICICIEMIN Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer",
+    "International Hotels Up to 12% off up to ₹7,500 Use Code: ICICIEMIN Offer Validity: Oct 01 to Dec 31, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "logo",
+   "url": "https://www.ixigo.com/",
+   "final_url": "https://www.ixigo.com/",
+   "page_title": "ixigo - Best Travel Website, Book Flights, Trains, Hotels & Buses",
+   "icici_logo": "https://images.ixigo.com/image/upload/offers_and_deals/1ca285d9482e0b774771e55579edbfa3-mansy.webp https://images.ixigo.com/image/upload/offers_and_deals/1ca285",
+   "icici_logo_count": 3,
+   "icici_text": "",
+   "rivals": [
+    "AU",
+    "Axis",
+    "HDFC",
+    "IDFC FIRST",
+    "Kotak",
+    "RBL"
+   ],
+   "screenshot": "ixigo.jpg",
+   "error": "",
+   "pages_checked": [
+    "https://www.ixigo.com/"
+   ]
+  },
+  {
+   "name": "Caratlane",
+   "category": "New on Bonanza page",
+   "offers": [
+    "Up to ₹2,000 off on a minimum purchase of ₹15,000 Offer Validity: Nov 12 to Nov 30, 2026 Valid on Credit CardsAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "New brand: add its website to data/brands.json"
+  },
+  {
+   "name": "Inaya Accessories",
+   "category": "New on Bonanza page",
+   "offers": [
+    "Additional 12% off Offer Validity: Nov 15, 2026 to Nov 14, 2027 Valid on Credit & Debit Cards Avail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "New brand: add its website to data/brands.json"
+  },
+  {
+   "name": "flipkart",
+   "category": "New on Bonanza page",
+   "offers": [
+    "10% off up to ₹5,250 Offer Validity: Nov 12 to Nov 30, 2026 Valid on Credit Card EMIsAvail Offer"
+   ],
+   "status": "nourl",
+   "url": null,
+   "rivals": [],
+   "error": "New brand: add its website to data/brands.json"
+  }
+ ]
+}
