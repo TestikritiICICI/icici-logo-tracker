@@ -434,6 +434,10 @@ async def main(only=None, recheck=False, from_mac=False):
         # The Mac's check is more complete (Indian connection, better OCR); never overwrite it
         print(f"Today's results already come from the {MAC_LABEL}; keeping them.", flush=True)
         return
+    if not only and os.environ.get("GITHUB_EVENT_NAME") == "schedule" and existing:
+        # Several backup schedules fire each day (GitHub often starts them late); the first one does the check
+        print("Today's check is already done; nothing to do.", flush=True)
+        return
 
     async with async_playwright() as pw:
         browser, context = await open_browser(pw)
