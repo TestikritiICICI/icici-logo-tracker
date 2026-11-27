@@ -1,7 +1,7 @@
 #!/bin/bash
 # Mac gap-filler for the daily ICICI logo tracker.
 #
-# GitHub Actions runs the full check every day at 9:00 AM IST, but many Indian
+# GitHub Actions runs the full check every day from 10:00 AM IST, but many Indian
 # sites block GitHub's (non-Indian) servers and its OCR misses some banner logos.
 # This script, run on the Mac on an Indian connection, checks every brand again;
 # its results replace GitHub's for the day (a brand the Mac cannot load keeps

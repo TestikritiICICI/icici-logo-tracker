@@ -127,3 +127,35 @@ Dated record of every activity on this project. Newest entries at the bottom.
 - Why a full Mac check, not just the blocked brands: the server's Tesseract OCR missed ICICI logos inside banners that the Mac reads (Amazon, Sleepyhead and Croma all showed the logo from the Mac on November 20 but not from the server).
 - November 20 after the Mac check: 14 ICICI logo shown, 2 text only, 16 other banks only, 58 no bank shown, 4 could not be checked (Ajio, Goibibo, MakeMyTrip, WearKatha), 8 website needed. Live on https://icici-logo-tracker.onrender.com.
 - Mac scheduled task "ICICI logo tracker: Mac fills the gaps" (ID `icici-logo-daily-tracker`) now runs `scripts/mac_fill_gaps.sh` daily at about 10:30 AM IST while the Claude app is open. On days the Mac is off, the site shows GitHub's results.
+
+### 21. Faster text recognition on GitHub (RapidOCR) and time limits
+- Run 4 (November 20) was cancelled at 3 hours: the new RapidOCR text reader was reading full-length pages at full resolution.
+- Fixed: RapidOCR reads only the top 3,500 px of each page at normal resolution; each page has a 3-minute limit and the whole run a 2-hour limit. Every brand that fails is retried once, one at a time, in a fresh browser without HTTP/2.
+
+## November 21 to 26, 2026
+
+### 22. Automatic runs on GitHub, every day
+- Runs 5 to 10 all succeeded on GitHub with no person or Mac needed. The Mac was off on these days, so all results are from the GitHub server.
+
+| Date | Started (IST) | ICICI logo | Text only | Other banks | No bank | Could not check |
+|---|---|---|---|---|---|---|
+| November 21, 2026 | 6:26 PM | 11 | 2 | 12 | 58 | 12 |
+| November 22, 2026 | 6:17 PM | 10 | 3 | 12 | 58 | 12 |
+| November 23, 2026 | 8:47 PM | 8 | 2 | 15 | 61 | 9 |
+| November 24, 2026 | 8:40 PM | 11 | 2 | 13 | 58 | 11 |
+| November 25, 2026 | 8:20 PM | 13 | 2 | 14 | 57 | 12 |
+| November 26, 2026 | 7:45 PM | 9 | 3 | 14 | 58 | 14 |
+
+- Problem: GitHub started the 10:00 AM run 8 to 10 hours late every day.
+- Sites that keep blocking GitHub's servers (outside India): Ajio, Blinkit, Cordelia Cruises, Fitelo, WearKatha, Goibibo, MakeMyTrip, Air India, Zomato, Yatra and a few others.
+- November 25: added Caratlane, Inaya Accessories and Flipkart (new on the Bonanza page) to `data/brands.json`.
+
+## November 27, 2026
+
+### 23. Backup start times for the 10 AM run
+- `.github/workflows/daily-check.yml` now has seven start times: 10:01, 10:23, 10:47 and 11:19 AM, and 11:53 AM, 12:31 and 1:07 PM IST. The first one GitHub starts does the check; later ones see today's results and stop within seconds (a "gate" step, plus the same check in `daily_check.py`).
+- Manual runs ("Run workflow") always check again.
+- Started today's check by hand at 4:05 PM IST, because today's run had not started.
+- Result (finished 4:24 PM IST, live on https://icici-logo-tracker.onrender.com): 13 ICICI logo shown, 1 text only, 14 other banks only, 58 no bank shown, 12 could not be checked, 8 website needed (106 brands on the Bonanza page today).
+- New brands: Inaya Accessories shows the ICICI logo; Caratlane shows other banks only; Flipkart shows no bank.
+- Could not be checked from GitHub's servers: A.O. Smith, Air India, Ajio, Blinkit, Cordelia Cruises, Fitelo, Goibibo, MakeMyTrip, Onida, WearKatha, Yatra, Zomato.
