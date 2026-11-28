@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ICICI Logo Tracker</title>
+<link rel="icon" href="assets/icici-iman.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;800;900&display=swap">
+<style>
+:root {
+  --orange:#E77817; --maroon:#97291E; --navy:#053C6D; --beige:#D1CFBB;
+  --gold:#FDB92A; --grey:#525252; --bg:#FFFFFF; --soft:#F6F5F0; --line:#E4E2D6;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family:'Mulish',Arial,sans-serif; font-weight:600; color:var(--grey); background:var(--bg); line-height:1.5; }
+a { color:var(--navy); }
+.wrap { max-width:1180px; margin:0 auto; padding:0 16px; }
+nav.top { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--line); }
+nav.top .wrap { display:flex; align-items:center; gap:24px; height:64px; }
+nav.top img { height:34px; }
+nav.top ul { display:flex; gap:20px; list-style:none; margin:0 0 0 auto; padding:0; }
+nav.top a { text-decoration:none; font-weight:700; white-space:nowrap; }
+nav.top a.on { color:var(--orange); }
+.hero { background:var(--orange); color:#fff; padding:40px 0 56px; }
+.hero h1 { font-size:clamp(1.8rem,4.5vw,3rem); font-weight:900; margin:0 0 6px; line-height:1.15; }
+.hero p { font-size:clamp(1rem,2vw,1.25rem); margin:0; max-width:820px; }
+.layout { display:grid; grid-template-columns:380px 1fr; gap:24px; margin-top:-32px; align-items:start; }
+.card { background:#fff; border-radius:12px; box-shadow:0 4px 18px rgba(0,0,0,.08); padding:20px; }
+.cal-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.cal-head h2 { margin:0; color:var(--maroon); font-weight:800; font-size:1.35rem; }
+.cal-head button { font:inherit; font-size:1.3rem; font-weight:800; width:40px; height:40px; border-radius:8px; border:2px solid var(--line); background:#fff; color:var(--navy); cursor:pointer; }
+.cal-head button:disabled { opacity:.3; cursor:default; }
+.cal { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; }
+.cal .dow { text-align:center; font-size:.8rem; font-weight:800; color:var(--navy); padding-bottom:4px; }
+.cal .d { aspect-ratio:1; border-radius:8px; background:var(--soft); display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:.95rem; color:#9a9a9a; border:2px solid transparent; }
+.cal .d.has { background:#fff; border-color:var(--line); color:var(--navy); cursor:pointer; font-weight:800; }
+.cal .d.has:hover { border-color:var(--orange); }
+.cal .d.sel { background:var(--orange); border-color:var(--orange); color:#fff; }
+.cal .d .n { font-size:.72rem; font-weight:800; color:var(--orange); line-height:1; margin-top:2px; }
+.cal .d.sel .n { color:#fff; }
+.cal .d.today { outline:2px dashed var(--navy); outline-offset:1px; }
+.legend { margin-top:12px; font-size:.85rem; }
+.legend b { color:var(--orange); }
+.trend { margin-top:16px; }
+.trend h3 { margin:0 0 6px; font-size:1rem; color:var(--navy); font-weight:800; }
+.trend svg { width:100%; height:90px; display:block; }
+.day h2 { margin:0; color:var(--maroon); font-weight:800; font-size:clamp(1.4rem,3vw,1.9rem); }
+.day .sub { color:var(--navy); font-weight:800; margin:2px 0 16px; }
+.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+.stat { border-radius:10px; padding:12px 14px; border:1px solid var(--line); border-top:5px solid; cursor:pointer; background:#fff; text-align:left; font:inherit; }
+.stat.on { box-shadow:0 0 0 2px var(--navy); }
+.stat .num { display:block; font-size:1.9rem; font-weight:900; line-height:1.1; }
+.stat .lbl { font-size:.88rem; font-weight:700; color:var(--grey); }
+.s-logo { border-top-color:var(--orange); } .s-logo .num { color:var(--orange); }
+.s-text { border-top-color:var(--gold); } .s-text .num { color:#B07A0A; }
+.s-rival { border-top-color:var(--maroon); } .s-rival .num { color:var(--maroon); }
+.s-none { border-top-color:var(--beige); } .s-none .num { color:var(--navy); }
+.s-error { border-top-color:#9a9a9a; } .s-error .num { color:#6b6b6b; }
+.s-nourl { border-top-color:var(--navy); } .s-nourl .num { color:var(--navy); }
+.changes { margin-top:16px; background:var(--soft); border-radius:10px; padding:12px 16px; }
+.changes h3 { margin:0 0 6px; font-size:1rem; color:var(--navy); font-weight:800; }
+.changes ul { margin:0; padding-left:18px; }
+.tools { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:20px 0 12px; }
+.tools input { font:inherit; padding:9px 12px; border:2px solid var(--line); border-radius:8px; min-width:220px; flex:1; }
+.tools .count { font-size:.9rem; }
+table { width:100%; border-collapse:collapse; }
+th { text-align:left; font-size:.85rem; color:var(--navy); font-weight:800; padding:8px; border-bottom:2px solid var(--line); }
+td { padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; font-size:.95rem; }
+td .bn { font-weight:800; color:var(--navy); }
+td .cat { font-size:.8rem; color:#7a7a7a; }
+td .ev { font-size:.85rem; word-break:break-word; }
+.tag { display:inline-block; font-size:.78rem; font-weight:800; padding:3px 9px; border-radius:999px; white-space:nowrap; }
+.tag.logo { background:var(--orange); color:#fff; }
+.tag.text { background:var(--gold); color:var(--navy); }
+.tag.rival { background:var(--maroon); color:#fff; }
+.tag.none { background:var(--beige); color:var(--navy); }
+.tag.error { background:#e6e6e6; color:#444; }
+.tag.nourl { background:var(--navy); color:#fff; }
+.thumb img { width:120px; height:78px; object-fit:cover; object-position:top; border-radius:6px; border:1px solid var(--line); display:block; }
+details summary { cursor:pointer; font-size:.85rem; color:var(--navy); font-weight:700; }
+details p { margin:4px 0 0; font-size:.85rem; }
+.note { font-size:.85rem; margin-top:20px; }
+.empty { padding:40px 0; text-align:center; }
+footer { margin-top:48px; border-top:1px solid var(--line); padding:20px 0 36px; }
+footer .wrap { display:flex; align-items:center; gap:12px; }
+footer img { height:36px; }
+#lb { position:fixed; inset:0; background:rgba(0,0,0,.85); display:none; align-items:center; justify-content:center; flex-direction:column; z-index:50; padding:16px; }
+#lb.open { display:flex; }
+#lb img { max-width:100%; max-height:85vh; border-radius:6px; background:#fff; }
+#lb p { color:#fff; margin:10px 0 0; text-align:center; }
+#lb button { position:absolute; top:12px; right:16px; font:inherit; font-size:2rem; background:none; border:0; color:#fff; cursor:pointer; }
+@media (max-width:900px) {
+  .layout { grid-template-columns:1fr; }
+  .stats { grid-template-columns:repeat(2,1fr); }
+  thead { display:none; }
+  table, tbody, tr, td { display:block; width:100%; }
+  tr { border-bottom:1px solid var(--line); padding:10px 0; }
+  td { border:0; padding:4px 0; }
+  nav.top ul { gap:14px; font-size:.9rem; }
+  nav.top img { height:26px; }
+}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <img src="assets/icici-logo.png" alt="ICICI Bank">
+  <ul>
+    <li><a class="on" href="index.html">Daily tracker</a></li>
+    <li><a href="audit.html">Baseline audit</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <h1>ICICI Bank logo tracker</h1>
+  <p>Every day, each brand on the Festive Bonanza page is checked for the ICICI Bank logo on its website. Pick a date to see that day's results.</p>
+</div></header>
+
+<main class="wrap">
+  <div class="layout">
+    <aside class="card">
+      <div class="cal-head">
+        <button id="prev" aria-label="Previous month">&lsaquo;</button>
+        <h2 id="month"></h2>
+        <button id="next" aria-label="Next month">&rsaquo;</button>
+      </div>
+      <div class="cal" id="cal"></div>
+      <p class="legend">Days with a check are outlined. The <b>orange number</b> is how many brands showed the ICICI logo that day.</p>
+      <div class="trend"><h3>Brands showing the ICICI logo</h3><svg id="trend" viewBox="0 0 340 90" preserveAspectRatio="none"></svg></div>
+    </aside>
+    <section class="card day" id="day"><p class="empty">Loading...</p></section>
+  </div>
+  <p class="note">The check runs every day at 9:00 AM IST on GitHub's servers. When the Mac in India is on, it then checks every brand again (Indian sites load more reliably from India, and its text recognition reads logos inside banners better) and its results replace the server's for that day.</p>
+  <p class="note">How it works: each brand's homepage is opened in Google Chrome, scrolled, and checked for "ICICI" in image names and alt text, in page text, and inside images using text recognition. "Other banks only" means other banks appear but ICICI does not. Checkout pages and mobile apps are not covered.</p>
+</main>
+
+<footer><div class="wrap">
+  <img src="assets/icici-iman.png" alt="">
+  <span>ICICI Bank logo tracker · Festive Bonanza partner brands</span>
+</div></footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Screenshot">
+  <button type="button" aria-label="Close">&times;</button>
+  <img alt=""><p></p>
+</div>
+
+<script>
+const STATUS = {
+  logo:  ["ICICI logo shown", "s-logo"],
+  text:  ["Named in text only", "s-text"],
+  rival: ["Other banks only", "s-rival"],
+  none:  ["No bank shown", "s-none"],
+  error: ["Could not check", "s-error"],
+  nourl: ["Website needed", "s-nourl"],
+};
+const ORDER = Object.keys(STATUS);
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const fmt = d => { const [y,m,dd] = d.split("-").map(Number); return `${MONTHS[m-1]} ${dd}, ${y}`; };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let days = [], byDate = {}, view, selected, cache = {}, filter = "all", query = "";
+
+function todayIST() {
+  return new Date(Date.now() + 5.5*3600e3).toISOString().slice(0,10);
+}
+
+function renderCal() {
+  const [y, m] = view;
+  document.getElementById("month").textContent = `${MONTHS[m]} ${y}`;
+  const first = new Date(Date.UTC(y, m, 1)).getUTCDay();
+  const n = new Date(Date.UTC(y, m+1, 0)).getUTCDate();
+  let h = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d => `<div class="dow">${d}</div>`).join("");
+  for (let i = 0; i < first; i++) h += "<div></div>";
+  const today = todayIST();
+  for (let d = 1; d <= n; d++) {
+    const key = `${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const r = byDate[key];
+    const cls = ["d", r ? "has" : "", key === selected ? "sel" : "", key === today ? "today" : ""].join(" ");
+    h += r ? `<div class="${cls}" data-d="${key}" role="button" tabindex="0" aria-label="${fmt(key)}: ${r.counts.logo||0} brands showed the ICICI logo">${d}<span class="n">${r.counts.logo||0}</span></div>`
+           : `<div class="${cls}">${d}</div>`;
+  }
+  const cal = document.getElementById("cal");
+  cal.innerHTML = h;
+  const months = days.map(x => x.date.slice(0,7));
+  const cur = `${y}-${String(m+1).padStart(2,"0")}`;
+  document.getElementById("prev").disabled = !months.some(x => x < cur);
+  document.getElementById("next").disabled = !months.some(x => x > cur);
+}
+
+function renderTrend() {
+  const svg = document.getElementById("trend");
+  const pts = days.slice(-60);
+  if (pts.length < 2) { svg.innerHTML = `<text x="0" y="50" font-size="13" fill="#7a7a7a">The trend line appears after two days of checks.</text>`; return; }
+  const max = Math.max(...pts.map(p => p.counts.logo || 0), 1);
+  const xy = pts.map((p, i) => [i / (pts.length-1) * 330 + 5, 82 - (p.counts.logo||0) / max * 70]);
+  svg.innerHTML = `<polyline fill="none" stroke="#E77817" stroke-width="2.5" points="${xy.map(p=>p.join(",")).join(" ")}"/>` +
+    xy.map((p,i) => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#E77817"><title>${fmt(pts[i].date)}: ${pts[i].counts.logo||0}</title></circle>`).join("");
+}
+
+async function loadDay(date) {
+  if (!cache[date]) cache[date] = await (await fetch(`data/days/${date}.json`)).json();
+  return cache[date];
+}
+
+function prevDate(date) {
+  const i = days.findIndex(d => d.date === date);
+  return i > 0 ? days[i-1].date : null;
+}
+
+async function select(date, push = true) {
+  selected = date;
+  view = [Number(date.slice(0,4)), Number(date.slice(5,7)) - 1];
+  if (push) history.replaceState(null, "", "#" + date);
+  renderCal();
+  const day = await loadDay(date);
+  const p = prevDate(date);
+  const prev = p ? await loadDay(p) : null;
+  renderDay(day, prev);
+}
+
+function changesHtml(day, prev) {
+  if (!prev) return `<div class="changes"><h3>Changes</h3><p>This is the first day of tracking, so there is nothing to compare yet.</p></div>`;
+  const old = Object.fromEntries(prev.brands.map(b => [b.name, b]));
+  const now = Object.fromEntries(day.brands.map(b => [b.name, b]));
+  const items = [];
+  for (const b of day.brands) {
+    const o = old[b.name];
+    if (!o) items.push(`<li><strong>${esc(b.name)}</strong> is new on the Bonanza page (${STATUS[b.status][0]})</li>`);
+    else if (o.status !== b.status) items.push(`<li><strong>${esc(b.name)}</strong>: ${STATUS[o.status][0]} → ${STATUS[b.status][0]}</li>`);
+  }
+  for (const b of prev.brands) if (!now[b.name]) items.push(`<li><strong>${esc(b.name)}</strong> is no longer on the Bonanza page</li>`);
+  return `<div class="changes"><h3>Changes since ${fmt(prev.date)}</h3>${items.length ? `<ul>${items.join("")}</ul>` : "<p>No changes.</p>"}</div>`;
+}
+
+function rowHtml(b) {
+  let ev = "";
+  if (b.status === "logo") ev = esc(b.icici_logo);
+  else if (b.status === "text") ev = "“" + esc(b.icici_text) + "”";
+  else if (b.error) ev = esc(b.error);
+  const offers = (b.offers || []).length
+    ? `<details><summary>${b.offers.length} Bonanza offer${b.offers.length > 1 ? "s" : ""}</summary>${b.offers.map(o => `<p>${esc(o)}</p>`).join("")}</details>` : "";
+  const shot = b.screenshot ? `<a class="thumb" href="${esc(b.screenshot)}" data-cap="${esc(b.name)}"><img src="${esc(b.screenshot)}" alt="${esc(b.name)} screenshot" loading="lazy"></a>` : "";
+  const site = b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">Open site</a>` : "";
+  return `<tr data-s="${b.status}" data-q="${esc((b.name + " " + b.category).toLowerCase())}">
+    <td><div class="bn">${esc(b.name)}</div><div class="cat">${esc(b.category)}</div>${b.rechecked_from ? `<div class="cat">Rechecked from ${esc(b.rechecked_from)}</div>` : ""}${b.kept_from ? `<div class="cat">Could not load this run; result from ${esc(b.kept_from)}</div>` : ""}${site}</td>
+    <td><span class="tag ${b.status}">${STATUS[b.status][0]}</span><div class="ev">${ev}</div>${offers}</td>
+    <td>${(b.rivals || []).map(esc).join(", ") || '<span class="cat">None seen</span>'}</td>
+    <td>${shot}</td></tr>`;
+}
+
+function renderDay(day, prev) {
+  const c = day.counts;
+  const stats = ORDER.filter(k => c[k]).map(k =>
+    `<button class="stat ${STATUS[k][1]} ${filter === k ? "on" : ""}" data-f="${k}"><span class="num">${c[k]}</span><span class="lbl">${STATUS[k][0]}</span></button>`).join("");
+  const rows = [...day.brands].sort((a,b) => ORDER.indexOf(a.status) - ORDER.indexOf(b.status) || a.name.localeCompare(b.name)).map(rowHtml).join("");
+  const warn = day.bonanza_page_read === false ? `<p class="changes">The Festive Bonanza page could not be read this day, so the full brand list was checked instead.</p>` : "";
+  document.getElementById("day").innerHTML = `
+    <h2>${fmt(day.date)}</h2>
+    <p class="sub">${c.logo || 0} of ${day.brands.length} brands showed the ICICI logo · checked ${esc(day.checked_at)}${day.run_by ? " from the " + esc(day.run_by) : ""}</p>
+    ${warn}
+    <div class="stats">${stats}</div>
+    ${changesHtml(day, prev)}
+    <div class="tools"><input id="q" type="search" placeholder="Search brand or category" value="${esc(query)}" aria-label="Search brands"><span class="count" id="count"></span></div>
+    <table><thead><tr><th>Brand</th><th>Result</th><th>Other banks seen</th><th>Screenshot</th></tr></thead><tbody>${rows}</tbody></table>`;
+  applyFilter();
+}
+
+function applyFilter() {
+  let n = 0;
+  document.querySelectorAll("#day tbody tr").forEach(tr => {
+    const show = (filter === "all" || tr.dataset.s === filter) && (!query || tr.dataset.q.includes(query));
+    tr.hidden = !show; if (show) n++;
+  });
+  document.querySelectorAll("#day .stat").forEach(s => s.classList.toggle("on", s.dataset.f === filter));
+  const c = document.getElementById("count");
+  if (c) c.textContent = `${n} brand${n === 1 ? "" : "s"}` + (filter !== "all" ? ` · ${STATUS[filter][0]} (click again to clear)` : "");
+}
+
+document.addEventListener("click", ev => {
+  const d = ev.target.closest(".cal .d.has");
+  if (d) return select(d.dataset.d);
+  const s = ev.target.closest("#day .stat");
+  if (s) { filter = filter === s.dataset.f ? "all" : s.dataset.f; return applyFilter(); }
+  const a = ev.target.closest("a[data-cap]");
+  if (a) {
+    ev.preventDefault();
+    const lb = document.getElementById("lb");
+    lb.querySelector("img").src = a.getAttribute("href");
+    lb.querySelector("p").textContent = a.dataset.cap + " · " + fmt(selected);
+    lb.classList.add("open");
+  }
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Escape") document.getElementById("lb").classList.remove("open");
+  const d = ev.target.closest && ev.target.closest(".cal .d.has");
+  if (d && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); select(d.dataset.d); }
+});
+document.addEventListener("input", ev => {
+  if (ev.target.id === "q") { query = ev.target.value.trim().toLowerCase(); applyFilter(); }
+});
+document.getElementById("lb").addEventListener("click", ev => {
+  if (ev.target.tagName !== "IMG") ev.currentTarget.classList.remove("open");
+});
+document.getElementById("prev").onclick = () => { view = view[1] ? [view[0], view[1]-1] : [view[0]-1, 11]; renderCal(); };
+document.getElementById("next").onclick = () => { view = view[1] < 11 ? [view[0], view[1]+1] : [view[0]+1, 0]; renderCal(); };
+
+(async () => {
+  days = await (await fetch("data/days.json", {cache: "no-store"})).json();
+  byDate = Object.fromEntries(days.map(d => [d.date, d]));
+  renderTrend();
+  if (!days.length) {
+    const t = todayIST(); view = [Number(t.slice(0,4)), Number(t.slice(5,7)) - 1]; renderCal();
+    document.getElementById("day").innerHTML = '<p class="empty">No checks yet. The first daily check will appear here.</p>';
+    return;
+  }
+  const want = location.hash.slice(1);
+  select(byDate[want] ? want : days[days.length-1].date, false);
+})();
+</script>
+</body>
+</html>
